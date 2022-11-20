@@ -1,10 +1,17 @@
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
+
+const DownloadPDF = dynamic(() => import('./downloadPDF'), {
+  suspense: true,
+})
+
 export default function Navbar() {
     return (
-      <div>
-      <h1> Welcome to the navbar </h1>
-        <h2 className="title">
-            Navvy
-        </h2>
+      <div className="navbar">
+        <h3>Robert Pether</h3>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <DownloadPDF />
       </div>
     )
   }

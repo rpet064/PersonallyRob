@@ -8,10 +8,35 @@
     background-color: black;
     color: white;
     height: 100%;
+    scroll-behavior: smooth;
   }
   
   body{
     min-height: 95vh;
     display: flex;
     flex-direction: column;
+  }
+
+  /* Navbar styling */
+
+  .navbar{
+    background-color: 393E46 !important;
+  }
+
+  /* about styling */
+
+  .about{
+    background-color: 393E46 !important;
+  }
+
+  /* projects styling */
+
+  .projects{
+    background-color: 393E46 !important;
+  }
+
+  /* footer styling */
+
+  .footer{
+    background-color: 393E46 !important;
   }

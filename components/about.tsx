@@ -1,6 +1,6 @@
 export default function About() {
     return (
-      <div>
+      <div className="about">
       <h1> Welcome to the about </h1>
         <h2 className="title">
             Navvy
