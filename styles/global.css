@@ -5,8 +5,6 @@
     font-weight: 300;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    color: white;
     height: 100%;
     scroll-behavior: smooth;
   }
@@ -20,8 +18,7 @@
   /* Navbar styling */
 
   .navbar{
-    background-color: #393E46 !important;
-    height: 2rem;
+    height: 3rem;
     width: 100%;
     padding: 0.5%;
     display: flex;
@@ -31,45 +28,76 @@
 
   .logo{
     margin-right: auto;
-    padding-left: 1%;
+    padding-left: 2%;
+    position: relative;
+    bottom: 50%;
+    font-size: 2rem;
   }
 
   .nav-items{
     margin-left: auto;
-    padding-right: 2%;
-    min-width: 25rem;
-    margin-top: auto;
+    padding-right: 4%;
+    min-width: 5rem;
+    margin-top: 0.5%;
   }
 
-  .navbar a{
-    color: white;
-    padding: 2%;
-  }
-
-  /* flex-grow: 4; */
-
-  
-
-  /* about styling */
-
-  .about{
-    background-color: #393E46 !important;  }
-
-  /* projects styling */
-
-  .projects{
-    background-color: #393E46 !important;  }
-
-  /* footer styling */
-
-  .footer{
-    background-color: #393E46 !important;
+  .navbar select{
     height: 3.25rem;
-    width: 100%;
+    width: 7rem;
+    font-size: 1rem;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 7.5%;
+    margin-top: 3%;
   }
+
+  .homepage{
+    padding-bottom: 1.75%;
+  }
+
+   /* image styling */
+
+  .image-container{
+    height: auto;
+    width: 60%;
+    margin: auto;
+  }
+
+  img{
+    padding: 0.5%;
+  }
+
+  h1{
+    margin: 0%;
+  }
+
+  .large-header{
+    font-size: 4.75rem;
+    margin-bottom: 1%;
+  }
+
+  .medium-header{
+    font-size: 2rem;
+    margin-bottom: 2%;
+  }
+
+  .row-1, .row-2{
+    margin: auto;
+    display: block;
+  }
+
+button{
+  width: 6rem;
+  height: 3rem;
+  border-radius: 10%;
+  background-color: white;
+}
+
+    /* footer styling */
 
 .footer p{
   padding-top: 1.25%;
   padding-bottom: 1%;
   font-size: 0.8rem;
+  margin-top: auto;
   }

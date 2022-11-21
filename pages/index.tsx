@@ -8,17 +8,10 @@ const Navbar = dynamic(() => import('../components/navbar'), {
   suspense: true,
 })
 
-const Greet = dynamic(() => import('../components/greet'), {
-  suspense: true,
-})
-
 const About = dynamic(() => import('../components/about'), {
   suspense: true,
 })
 
-const Projects = dynamic(() => import('../components/projects'), {
-  suspense: true,
-})
 
 const Contact = dynamic(() => import('../components/contact'), {
   suspense: true,
@@ -38,9 +31,7 @@ export default function Home() {
     </Head>
     <Suspense fallback={`Loading...`}>
       <Navbar />
-      < Greet />
       <About />
-      <Projects />
       <Contact />
       <Footer />
     </Suspense>
