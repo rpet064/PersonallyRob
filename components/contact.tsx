@@ -9,13 +9,13 @@ const myLoader = ({ src, width, quality }) => {
 export default function Contact(props) {
     return (
       <div className="contact">
-        <Image
+        {/* <Image
             loader={myLoader}
             src="RP"
             alt="Picture of the author"
             width={500}
             height={500}
-            />
+            /> */}
       </div>
     )
   }

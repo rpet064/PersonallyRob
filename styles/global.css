@@ -20,23 +20,56 @@
   /* Navbar styling */
 
   .navbar{
-    background-color: 393E46 !important;
+    background-color: #393E46 !important;
+    height: 2rem;
+    width: 100%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto; 
   }
+
+  .logo{
+    margin-right: auto;
+    padding-left: 1%;
+  }
+
+  .nav-items{
+    margin-left: auto;
+    padding-right: 2%;
+    min-width: 25rem;
+    margin-top: auto;
+  }
+
+  .navbar a{
+    color: white;
+    padding: 2%;
+  }
+
+  /* flex-grow: 4; */
+
+  
 
   /* about styling */
 
   .about{
-    background-color: 393E46 !important;
-  }
+    background-color: #393E46 !important;  }
 
   /* projects styling */
 
   .projects{
-    background-color: 393E46 !important;
-  }
+    background-color: #393E46 !important;  }
 
   /* footer styling */
 
   .footer{
-    background-color: 393E46 !important;
+    background-color: #393E46 !important;
+    height: 3.25rem;
+    width: 100%;
+  }
+
+.footer p{
+  padding-top: 1.25%;
+  padding-bottom: 1%;
+  font-size: 0.8rem;
   }
