@@ -43,11 +43,11 @@
 
   .navbar select{
     height: 3.25rem;
-    width: 7rem;
+    width: 7.5rem;
     font-size: 1rem;
     border-width: 2px;
     border-radius: 10%;
-    padding: 7.5%;
+    padding: 10%;
     margin-top: 3%;
   }
 
@@ -78,7 +78,7 @@
 
   .medium-header{
     font-size: 2rem;
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
   }
 
   .row-1, .row-2{
@@ -91,6 +91,26 @@ button{
   height: 3rem;
   border-radius: 10%;
   background-color: white;
+  margin-bottom: 1.5%;
+  font-size: 1.1rem;
+}
+
+.icon-container{
+  border: solid #000;
+  border-width: 1 1px;
+  width: 20%;
+    margin: auto; 
+  border-radius: 5%;
+}
+
+svg{
+  font-size:1.3rem;
+  color: black; 
+  padding: 2%;
+}
+
+svg:hover, .logo:hover, button:hover, select:hover{
+  color: #a2d9fd;
 }
 
     /* footer styling */

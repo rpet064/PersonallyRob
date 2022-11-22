@@ -8,7 +8,7 @@ const DownloadPDF = dynamic(() => import('./downloadPDF'), {
 export default function Navbar() {
     return (
       <div className="navbar">
-        <div className="logo">
+        <div title="Home" className="logo">
           <h3>RP.</h3>
         </div>
         <div className="nav-items">

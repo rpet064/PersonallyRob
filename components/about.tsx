@@ -8,7 +8,7 @@ const myLoader = ({ src, width, quality, ext }) => {
 
 export default function About(props) {
     return (
-      <div className='homepage'>
+      <div className="homepage">
         <h1 className="large-header">Robert Pether</h1>
       <div className="image-container">
         <div className="row-1">
