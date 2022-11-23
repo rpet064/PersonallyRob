@@ -41,7 +41,11 @@
     margin-top: 0.5%;
   }
 
-  .navbar select{
+  option:not(:checked) {
+    background-color: #fff;
+  }
+
+  .navbar select, .navbar option{
     height: 3.25rem;
     width: 7.5rem;
     font-size: 1rem;
@@ -49,6 +53,7 @@
     border-radius: 10%;
     padding: 10%;
     margin-top: 3%;
+    background-color: white;
   }
 
   .homepage{
@@ -76,9 +81,21 @@
     margin-bottom: 1%;
   }
 
+  @media (max-width: 768px) {
+    .large-header{
+      margin: 3%;
+    }
+  }
+
   .medium-header{
     font-size: 2rem;
     margin-bottom: 1.5%;
+  }
+
+  @media (max-width: 768px) {
+    .medium-header{
+      padding: 2.5%;
+    }
   }
 
   .row-1, .row-2{
@@ -93,13 +110,14 @@ button{
   background-color: white;
   margin-bottom: 1.5%;
   font-size: 1.1rem;
+  border: 1.5px solid grey;
 }
 
 .icon-container{
-  border: solid #000;
-  border-width: 1 1px;
+  border: 1.5px solid grey;
+  border-width: 1px;
   width: 20%;
-    margin: auto; 
+  margin: auto; 
   border-radius: 5%;
 }
 
@@ -116,8 +134,13 @@ svg:hover, .logo:hover, button:hover, select:hover{
     /* footer styling */
 
 .footer p{
-  padding-top: 1.25%;
-  padding-bottom: 1%;
+  padding-top: 2.1%;
   font-size: 0.8rem;
   margin-top: auto;
   }
+
+@media (max-width: 768px) {
+  .footer p{
+    padding-top: 3.1%;
+  }
+}

@@ -15,10 +15,12 @@ export default function Contact() {
     return (
     <div>
         <h1 title="About" className='medium-header'>Junior Developer</h1>
-        <button title="Projects">Projects</button>
+        <a href="https://github.com/rpet064/">
+            <button title="Projects">Projects</button>
+        </a>
         <div className="icon-container">
             <a title="Github" href="https://github.com/rpet064"><FontAwesomeIcon icon={faGithub} /></a>
-            <a title="Linkedin" href="www.linkedin.com/in/robert-pether-ba9968113"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a title="Linkedin" href="https://www.linkedin.com/in/robert-pether-ba9968113"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a title="Email" href="mailto:rpether@hotmail.co.nz"><FontAwesomeIcon icon={faEnvelope} /></a>
             <a title='youtube' href='https://www.youtube.com/@rpet064/featured'><FontAwesomeIcon icon={faYoutube} /></a>
         </div>

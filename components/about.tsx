@@ -14,33 +14,33 @@ export default function About(props) {
         <div className="row-1">
          <Image
             loader={myLoader}
-            src="RP.png"
+            src="RP1.jpg"
             alt="Picture of the author"
             width={125}
-            height={125}
+            height={150}
             />
             <Image
             loader={myLoader}
-            src="RP.png"
+            src="RP2.jpg"
             alt="Picture of the author"
             width={125}
-            height={125}
+            height={150}
             />
             </div>
             <div className="row-2">
               <Image
               loader={myLoader}
-              src="RP.png"
+              src="RP3.jpg"
               alt="Picture of the author"
               width={125}
-              height={125}
+              height={150}
               />
               <Image
               loader={myLoader}
-              src="RP.png"
+              src="RP4.jpg"
               alt="Picture of the author"
               width={125}
-              height={125}
+              height={150}
               />
           </div>
       </div>
