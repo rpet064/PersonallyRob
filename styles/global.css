@@ -8,6 +8,11 @@
     height: 100%;
     scroll-behavior: smooth;
   }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
   
   body{
     min-height: 95vh;
@@ -108,7 +113,7 @@ button{
   height: 3rem;
   border-radius: 10%;
   background-color: white;
-  margin-bottom: 1.5%;
+  margin-bottom: 1%;
   font-size: 1.1rem;
   border: 1.5px solid grey;
 }
@@ -127,7 +132,7 @@ svg{
   padding: 2%;
 }
 
-svg:hover, .logo:hover, button:hover, select:hover{
+svg:hover, .logo:hover, button:hover, select:hover, #about-link:hover{
   color: #a2d9fd;
 }
 

@@ -10,39 +10,14 @@ export default function About(props) {
     return (
       <div className="homepage">
         <h1 className="large-header">Robert Pether</h1>
-      <div className="image-container">
-        <div className="row-1">
-         <Image
-            loader={myLoader}
-            src="RP1.jpg"
-            alt="Picture of the author"
-            width={125}
-            height={150}
-            />
-            <Image
-            loader={myLoader}
-            src="RP2.jpg"
-            alt="Picture of the author"
-            width={125}
-            height={150}
-            />
-            </div>
-            <div className="row-2">
-              <Image
+         <div className="image-container">
+          <Image
               loader={myLoader}
-              src="RP3.jpg"
+              src="robert_pether.png"
               alt="Picture of the author"
-              width={125}
-              height={150}
+              width={175}
+              height={200}
               />
-              <Image
-              loader={myLoader}
-              src="RP4.jpg"
-              alt="Picture of the author"
-              width={125}
-              height={150}
-              />
-          </div>
       </div>
     </div>
     )

@@ -1,8 +1,10 @@
-import Head from 'next/head'
 import Link from 'next/link';
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 
+const Header = dynamic(() => import('../components/header'), {
+  suspense: true,
+})
 
 const Navbar = dynamic(() => import('../components/navbar'), {
   suspense: true,
@@ -25,24 +27,7 @@ const Footer = dynamic(() => import('../components/footer'), {
 export default function Home() {
   return (
     <div>
-    <Head>
-      <title>Robert Pether: React Developer Personal Website</title>
-      {/* meta tags */}
-      <meta name="author" content="Robert Pether" />
-      <meta
-        name="description"
-        content="Robert Pether React Developer Personal Website" />
-      <meta 
-        name="keywords" content="React Next Node MongoDB Azure AWS Flask 
-        CV Robert Pether Junior Front-End Developer Personal Website "/>
-      <meta 
-        name="viewport" content="width=device-width, initial-scale=1.0" />
-      {/* links & APIs */}
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
-    </Head>
+    <Header />
     <Suspense fallback={`Loading...`}>
       <Navbar />
       <About />
