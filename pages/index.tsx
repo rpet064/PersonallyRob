@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
+
 
 const Header = dynamic(() => import('../components/header'), {
   suspense: true,

@@ -1,3 +1,5 @@
+/* Global Styles */
+
 * body{
     padding: 0;
     margin: 0;
@@ -18,6 +20,67 @@
     min-height: 95vh;
     display: flex;
     flex-direction: column;
+  }
+
+  button{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 10%;
+    background-color: white;
+    margin-bottom: 1%;
+    font-size: 1.1rem;
+    border: 1.5px solid grey;
+  }
+
+  svg{
+    font-size:1.3rem;
+    color: black; 
+    padding: 2%;
+  }
+  
+  svg:hover, .logo:hover, button:hover, select:hover, #about-link:hover{
+    color: #a2d9fd;
+  }
+
+  /* header styling */
+
+  h1{
+    margin: 0%;
+  }
+
+  .large-header{
+    font-size: 4.75rem;
+    margin-bottom: 1%;
+  }
+
+  @media (max-width: 768px) {
+    .large-header{
+      margin: 3%;
+    }
+  }
+
+  .medium-header{
+    font-size: 2rem;
+    margin: 1.5%;
+  }
+
+  @media (max-width: 768px) {
+    .medium-header{
+      padding: 2.5%;
+    }
+  }
+
+   /* image styling */
+
+   .image-container{
+    height: auto;
+    width: 60%;
+    margin: auto;
+  }
+
+  .row-1, .row-2{
+    margin: auto;
+    display: block;
   }
 
   /* Navbar styling */
@@ -61,62 +124,11 @@
     background-color: white;
   }
 
+  /* landing page styling */
+
   .homepage{
     padding-bottom: 1.75%;
   }
-
-   /* image styling */
-
-  .image-container{
-    height: auto;
-    width: 60%;
-    margin: auto;
-  }
-
-  img{
-    padding: 0.5%;
-  }
-
-  h1{
-    margin: 0%;
-  }
-
-  .large-header{
-    font-size: 4.75rem;
-    margin-bottom: 1%;
-  }
-
-  @media (max-width: 768px) {
-    .large-header{
-      margin: 3%;
-    }
-  }
-
-  .medium-header{
-    font-size: 2rem;
-    margin-bottom: 1.5%;
-  }
-
-  @media (max-width: 768px) {
-    .medium-header{
-      padding: 2.5%;
-    }
-  }
-
-  .row-1, .row-2{
-    margin: auto;
-    display: block;
-  }
-
-button{
-  width: 6rem;
-  height: 3rem;
-  border-radius: 10%;
-  background-color: white;
-  margin-bottom: 1%;
-  font-size: 1.1rem;
-  border: 1.5px solid grey;
-}
 
 .icon-container{
   border: 1.5px solid grey;
@@ -126,14 +138,12 @@ button{
   border-radius: 5%;
 }
 
-svg{
-  font-size:1.3rem;
-  color: black; 
-  padding: 2%;
-}
+/* about me page styling */
 
-svg:hover, .logo:hover, button:hover, select:hover, #about-link:hover{
-  color: #a2d9fd;
+.image-div{
+  position: relative;
+  display: inline-block;
+  width: 23%;
 }
 
     /* footer styling */

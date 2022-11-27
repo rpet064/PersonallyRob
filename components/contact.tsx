@@ -22,14 +22,14 @@ export default function Contact() {
     <div>
         <div>
             <h1 title="About" className='medium-header'>Junior React Developer</h1>
-            <button title="Projects">
-                <Link id='about-link' href="/about/me">About</Link>
+            <button title="About">
+                <Link id='about-link' href="/about/me#about">About</Link>
             </button>
         </div>
-        <div className='projects-container'>
-            <a href="https://github.com/rpet064/">
-                <button title="Projects">Projects</button>
-            </a>
+        <div className='Portfolio-container'>
+            <button title="Portfolio">
+                <Link id='about-link' href="/about/me#Portfolio">Portfolio</Link>
+            </button>
         </div>
         <div className="icon-container">
             <a title="Github" href="https://github.com/rpet064"><FontAwesomeIcon icon={faGithub} /></a>
