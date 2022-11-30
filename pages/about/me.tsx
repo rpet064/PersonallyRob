@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import aboutInfo from './aboutInfo';
 
 const Header = dynamic(() => import('../../components/header'), {
   suspense: true,
@@ -23,16 +24,21 @@ const myLoader = ({ src, width, quality, ext }) => {
 }
 
 export default function Me() {
+  let modalTitle='This is the experience Modal';
+  let modalContent='Wow experience description, so much experience';
+
+  function handleModalRender(arrayPosition){
+    // get array position from onMouseEnter
+    // save info into let variable displayed inside modal
+    modalTitle = aboutInfo[arrayPosition]['modalTitle'];
+    modalContent = aboutInfo[arrayPosition]['modalContent'];
+    setShowModal(true);
+    console.log(modalTitle);
+  }
+
   // about section hooks render modal
-  const [showEducation, setShowEducation] = useState(false);
-  const [showExperience, setShowExperience] = useState(false);
-  const [showHobby, setShowHobby] = useState(false);
-  const [showSkill, setShowSkill] = useState(false);
-  // portfolio section hooks render modal
-  const [showFirstProject, setShowFirstProject] = useState(false);
-  const [showSecondProject, setShowSecondProject] = useState(false);
-  const [showThirdProject, setShowThirdProject] = useState(false);
-  const [showFourthProject, setShowFourthProject] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
     return (
       <div id="about">
          <Header />
@@ -43,7 +49,8 @@ export default function Me() {
                 <div className="row-1">
                   <div 
                     className="image-div"
-                    onMouseEnter={() => setShowEducation(true)} >
+                    onMouseEnter={() => handleModalRender(0)} 
+                    >
                     <Image
                       loader={myLoader}
                       src="1.jpg"
@@ -54,7 +61,8 @@ export default function Me() {
                       </div>
                       <div 
                         className="image-div"
-                        onMouseEnter={() => setShowExperience(true)} >
+                        onMouseEnter={() => handleModalRender(1)} 
+                        >
                         <Image
                         loader={myLoader}
                         src="2.jpg"
@@ -67,7 +75,8 @@ export default function Me() {
                     <div className="row-2">
                       <div 
                         className="image-div"
-                        onMouseEnter={() => setShowHobby(true)} >
+                        onMouseEnter={() => handleModalRender(2)} 
+                        >
                         <Image
                         loader={myLoader}
                         src="3.jpg"
@@ -78,8 +87,9 @@ export default function Me() {
                     </div>
                     <div 
                       className="image-div"
-                      onMouseEnter={() => setShowSkill(true)} >
-                        <Image
+                      onMouseEnter={() => handleModalRender(3)} 
+                      >
+                      <Image
                         loader={myLoader}
                         src="4.jpg"
                         alt="Picture of the author"
@@ -87,26 +97,6 @@ export default function Me() {
                         height={125}
                         />
                     </div>
-                    {/* show education modal */}
-                    {/* show work experience modal */}
-                    <>
-                      <Modal show={showExperience} onHide={() => setShowExperience(false)}>
-                        <Modal.Header closeButton>
-                          <Modal.Title>Modal heading</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                        <Modal.Footer>
-                          <Button variant="secondary" onClick={() => setShowExperience(false)}>
-                            Close
-                          </Button>
-                          <Button variant="primary" onClick={() => setShowExperience(false)}>
-                            Save Changes
-                          </Button>
-                        </Modal.Footer>
-                      </Modal>
-                    </>
-                    {/* show skills modal */}
-                    {/* show hobbies modal */}
                   </div>
           </div>
           <div id="Portfolio">
@@ -115,7 +105,8 @@ export default function Me() {
               <div className="row-1">
                 <div 
                   className="image-div"
-                  onMouseEnter={() => setShowFirstProject(true)} >
+                  onMouseEnter={() => handleModalRender(4)} 
+                  >
                   <Image
                     loader={myLoader}
                     src="1.jpg"
@@ -126,7 +117,8 @@ export default function Me() {
                 </div>
                   <div 
                    className="image-div"
-                    onMouseEnter={() => setShowSecondProject(true)} >
+                   onMouseEnter={() => handleModalRender(5)} 
+                   >
                     <Image
                     loader={myLoader}
                     src="2.jpg"
@@ -139,7 +131,8 @@ export default function Me() {
                   <div className="row-2">
                     <div 
                       className="image-div"
-                      onMouseEnter={() => setShowThirdProject(true)} >
+                      onMouseEnter={() => handleModalRender(6)} 
+                      >
                       <Image
                       loader={myLoader}
                       src="3.jpg"
@@ -150,7 +143,8 @@ export default function Me() {
                   </div>
                   <div 
                     className="image-div"
-                    onMouseEnter={() => setShowFourthProject(true)} >
+                    onMouseEnter={() => handleModalRender(7)} 
+                    >
                       <Image
                       loader={myLoader}
                       src="4.jpg"
@@ -159,12 +153,19 @@ export default function Me() {
                       height={125}
                       />
                   </div>
-                  {/* show education modal */}
-                  {/* show work experience modal */}
-                  {/* show skills modal */}
-                  {/* show hobbies modal */}
                 </div>
               </div>
+              <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                  <Modal.Title>{modalTitle}</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>{modalContent}</Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowModal(false)}>
+                      Close
+                    </Button>
+                  </Modal.Footer>
+              </Modal>
           </div>
         <Footer />
       </div>
