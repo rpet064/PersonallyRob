@@ -35,7 +35,7 @@
   svg{
     font-size:1.3rem;
     color: black; 
-    padding: 2%;
+    padding: 3.5% 2% 2% 3%;
   }
   
   svg:hover, .logo:hover, button:hover, select:hover, #about-link:hover{
@@ -61,7 +61,7 @@
 
   .medium-header{
     font-size: 2rem;
-    margin: 1.5%;
+    margin: 0.1% 1.5% 1.5% 1.5%;
   }
 
   @media (max-width: 768px) {
@@ -76,6 +76,7 @@
     height: auto;
     width: 60%;
     margin: auto;
+    overflow: none !important;
   }
 
   .row-1, .row-2{
@@ -97,9 +98,10 @@
   .logo{
     margin-right: auto;
     padding-left: 2%;
-    position: relative;
-    bottom: 50%;
-    font-size: 2rem;
+  }
+
+  .logo h3{
+    font-size: 2.2rem;
   }
 
   .nav-items{
@@ -143,7 +145,18 @@
 .image-div{
   position: relative;
   display: inline-block;
-  width: 23%;
+  width: 20%;
+}
+
+.focus-image-div{
+  width: 35%;
+  height: 59.8%;
+  z-index: 9;
+  position: absolute;
+  top: 53.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
 }
 
     /* footer styling */

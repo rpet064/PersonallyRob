@@ -38,6 +38,12 @@ export default function Me() {
 
   // about section hooks render modal
   const [showModal, setShowModal] = useState(false);
+  // dynamically change styling on mouseover
+  const [elementClass0, setElementClass0] = useState("image-div");
+  const [elementClass1, setElementClass1] = useState("image-div");
+  const [elementClass2, setElementClass2] = useState("image-div");
+  const [elementClass3, setElementClass3] = useState("image-div");
+
 
     return (
       <div id="about">
@@ -47,56 +53,52 @@ export default function Me() {
             <h1 className="medium-header">About</h1>
               <div className="image-container">
                 <div className="row-1">
-                  <div 
-                    className="image-div"
-                    onMouseEnter={() => handleModalRender(0)} 
-                    >
                     <Image
+                      className={elementClass0}
+                      onMouseEnter={() => setElementClass0("focus-image-div")} 
+                      onMouseLeave={() => setElementClass0("image-div")} 
+                      onClick={() => handleModalRender(0)} 
                       loader={myLoader}
                       src="1.jpg"
                       alt="Picture of the author"
                       width={175}
                       height={125}
                       />
-                      </div>
-                      <div 
-                        className="image-div"
-                        onMouseEnter={() => handleModalRender(1)} 
-                        >
                         <Image
+                        className={elementClass1}
+                        onMouseEnter={() => setElementClass1("focus-image-div")} 
+                        onMouseLeave={() => setElementClass1("image-div")} 
+                        onClick={() => handleModalRender(1)} 
                         loader={myLoader}
                         src="2.jpg"
                         alt="Picture of the author"
                         width={175}
                         height={125}
-                          />
-                      </div>
-                    </div>
-                    <div className="row-2">
-                      <div 
-                        className="image-div"
-                        onMouseEnter={() => handleModalRender(2)} 
-                        >
+                      />
+                  </div>
+                  <div className="row-2">
                         <Image
+                        className={elementClass2}
+                        onMouseEnter={() => setElementClass2("focus-image-div")} 
+                        onMouseLeave={() => setElementClass2("image-div")} 
+                        onClick={() => handleModalRender(2)} 
                         loader={myLoader}
                         src="3.jpg"
                         alt="Picture of the author"
                         width={175}
                         height={125}
                         />
-                    </div>
-                    <div 
-                      className="image-div"
-                      onMouseEnter={() => handleModalRender(3)} 
-                      >
                       <Image
+                        className={elementClass3}
+                        onMouseEnter={() => setElementClass3("focus-image-div")} 
+                        onMouseLeave={() => setElementClass3("image-div")} 
+                        onClick={() => handleModalRender(3)} 
                         loader={myLoader}
                         src="4.jpg"
                         alt="Picture of the author"
                         width={175}
                         height={125}
                         />
-                    </div>
                   </div>
           </div>
           <div id="Portfolio">
@@ -116,8 +118,8 @@ export default function Me() {
                     />
                 </div>
                   <div 
-                   className="image-div"
-                   onMouseEnter={() => handleModalRender(5)} 
+                  className="image-div"
+                  onMouseEnter={() => handleModalRender(5)} 
                    >
                     <Image
                     loader={myLoader}
@@ -130,8 +132,8 @@ export default function Me() {
                   </div>
                   <div className="row-2">
                     <div 
-                      className="image-div"
-                      onMouseEnter={() => handleModalRender(6)} 
+                    className="image-div"
+                    onMouseEnter={() => handleModalRender(6)} 
                       >
                       <Image
                       loader={myLoader}
