@@ -64,9 +64,20 @@
     margin: 0.1% 1.5% 1.5% 1.5%;
   }
 
+  #portfolio-header{
+    padding-top: 1.5%;
+  }
+
   @media (max-width: 768px) {
     .medium-header{
       padding: 2.5%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #about-header, #portfolio-header{
+      font-size: 2.5rem;
+      padding: 1.5% 2%;
     }
   }
 
@@ -140,22 +151,50 @@
   border-radius: 5%;
 }
 
+@media (max-width: 900px) {
+  .icon-container{
+    border: 1.5px solid grey;
+    border-width: 1px;
+    width: 30%;
+    margin: auto; 
+    border-radius: 5%;
+  }
+}
+
 /* about me page styling */
 
 .image-div{
   position: relative;
   display: inline-block;
-  width: 20%;
+  width:calc(30rem - 27)!important;
+}
+
+@media only screen and (max-width: 768px){
+  .image-div{
+    width: 10rem;
+  }
 }
 
 .focus-image-div{
+  width: 33%; 
+  height: 57.8%;
+  z-index: 9;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+}
+
+
+
+.portfolio-focus-image-div{
   width: 35%;
   height: 59.8%;
   z-index: 9;
   position: absolute;
-  top: 53.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 90%;
+  left: 31.5%;
   border-radius: 10%;
 }
 
