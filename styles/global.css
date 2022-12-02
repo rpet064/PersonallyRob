@@ -186,16 +186,28 @@
   border-radius: 10%;
 }
 
-
-
-.portfolio-focus-image-div{
-  width: 35%;
-  height: 59.8%;
+.portfolio-focus-image-div-1{
+  width: 32%;
+  height: 51%;
   z-index: 9;
   position: absolute;
-  top: 90%;
-  left: 31.5%;
+  top: 94.5%;
+  left: 33.5%;
   border-radius: 10%;
+}
+
+.portfolio-focus-image-div-2{
+  width: 32%;
+  height: 49%;
+  z-index: 9;
+  position: absolute;
+  top: 142%;
+  left: 33.5%;
+  border-radius: 10%;
+}
+
+.modal-dialog{
+  margin-top: 10% !important;
 }
 
     /* footer styling */
