@@ -163,6 +163,20 @@
 
 /* about me page styling */
 
+.image-label-container{
+  width: 40%;
+  margin: auto;
+  display: block;
+}
+
+.image-label-left{
+  float: left;
+}
+
+.image-label-right{
+  float: right;
+}
+
 .image-div{
   position: relative;
   display: inline-block;
@@ -175,15 +189,21 @@
   }
 }
 
+@media only screen and (min-width: 1150px){
+  .focus-image-div{
+    width: 33%; 
+    height: 57.8%;
+    z-index: 9;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+  }
+}
+
 .focus-image-div{
-  width: 33%; 
-  height: 57.8%;
-  z-index: 9;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10%;
+  border: 2px solid #a2d9fd;
 }
 
 .modal-dialog{

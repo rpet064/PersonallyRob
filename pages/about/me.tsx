@@ -49,15 +49,19 @@ export default function Me() {
           <Navbar />
             <h1 className="large-header">Robert Pether</h1>
             <h1 id="about-header" className="medium-header">About</h1>
+            {/* <div className="image-label-container">
+              <div>
+                <p className="image-label-left">Education</p>
+                <div>
+              </div>
+                <p className="image-label-right">Previous Experience</p>
+              </div>
+            </div> */}
               <div className="image-container">
                 <div className="row-1">
                     <Image
                       className={elementClass0}
-                      onMouseEnter={
-                        function(event){
-                          setElementClass0("focus-image-div");
-                        }
-                      } 
+                      onMouseEnter={() => setElementClass0("focus-image-div")}
                       onMouseLeave={() => setElementClass0("image-div")} 
                       onClick={() => handleModalRender(0)} 
                       loader={myLoader}
@@ -102,6 +106,9 @@ export default function Me() {
                         height={125}
                         />
                   </div>
+              {/* <div className="image-label-container">
+                <p className="image-label-left">Skills</p><p className="image-label-right">Hobbies & Interests</p>
+              </div> */}
               <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                   <Modal.Title>{modalTitle}</Modal.Title>
