@@ -42,14 +42,6 @@ export default function Me() {
   const [elementClass1, setElementClass1] = useState("image-div");
   const [elementClass2, setElementClass2] = useState("image-div");
   const [elementClass3, setElementClass3] = useState("image-div");
-  const [elementClass4, setElementClass4] = useState("image-div");
-  const [elementClass5, setElementClass5] = useState("image-div");
-  const [elementClass6, setElementClass6] = useState("image-div");
-  const [elementClass7, setElementClass7] = useState("image-div");
-  const [elementClass8, setElementClass8] = useState("image-div");
-  const [elementClass9, setElementClass9] = useState("image-div");
-  const [elementClass10, setElementClass10] = useState("image-div");
-  const [elementClass11, setElementClass11] = useState("image-div");
 
     return (
       <div id="about">
@@ -110,108 +102,6 @@ export default function Me() {
                         height={125}
                         />
                   </div>
-          </div>
-          <div id="Portfolio">
-          <h1 id="portfolio-header" className="medium-header">React Web Applications</h1>
-            <div className="image-container">
-              <div className="row-1">
-                  <Image
-                    className={elementClass4}
-                    onMouseEnter={() => setElementClass4("portfolio-focus-image-div-1")} 
-                    onMouseLeave={() => setElementClass4("image-div")} 
-                    onClick={() => handleModalRender(4)} 
-                    loader={myLoader}
-                    src="5.png"
-                    alt="Picture of the author"
-                    width={200}
-                    height={125}
-                    />
-                    <Image
-                    className={elementClass5}
-                    onMouseEnter={() => setElementClass5("portfolio-focus-image-div-1")} 
-                    onMouseLeave={() => setElementClass5("image-div")} 
-                    onClick={() => handleModalRender(5)} 
-                    loader={myLoader}
-                    src="6.png"
-                    alt="Picture of the author"
-                    width={200}
-                    height={125}
-                      />
-                  </div>
-                  <div className="row-2">
-                      <Image
-                        className={elementClass6}
-                        onMouseEnter={() => setElementClass6("portfolio-focus-image-div-1")} 
-                        onMouseLeave={() => setElementClass6("image-div")} 
-                        onClick={() => handleModalRender(6)} 
-                        loader={myLoader}
-                        src="7.png"
-                        alt="Picture of the author"
-                        width={200}
-                        height={125}
-                      />
-                      <Image
-                        className={elementClass7}
-                        onMouseEnter={() => setElementClass7("portfolio-focus-image-div-1")} 
-                        onMouseLeave={() => setElementClass7("image-div")} 
-                        onClick={() => handleModalRender(7)} 
-                        loader={myLoader}
-                        src="8.png"
-                        alt="Picture of the author"
-                        width={200}
-                        height={125}
-                      />
-                </div>
-                <h1 id="portfolio-header" className="medium-header">Professionally Designed Websites</h1>
-                <div className="row-1">
-                  <Image
-                    className={elementClass8}
-                    onMouseEnter={() => setElementClass8("portfolio-focus-image-div-2")} 
-                    onMouseLeave={() => setElementClass8("image-div")} 
-                    onClick={() => handleModalRender(8)} 
-                    loader={myLoader}
-                    src="9.png"
-                    alt="Picture of the author"
-                    width={200}
-                    height={125}
-                    />
-                    <Image
-                    className={elementClass9}
-                    onMouseEnter={() => setElementClass9("portfolio-focus-image-div-2")} 
-                    onMouseLeave={() => setElementClass9("image-div")} 
-                    onClick={() => handleModalRender(9)} 
-                    loader={myLoader}
-                    src="10.png"
-                    alt="Picture of the author"
-                    width={200}
-                    height={125}
-                      />
-                  </div>
-                  <div className="row-2">
-                      <Image
-                        className={elementClass10}
-                        onMouseEnter={() => setElementClass10("portfolio-focus-image-div-2")} 
-                        onMouseLeave={() => setElementClass10("image-div")} 
-                        onClick={() => handleModalRender(10)} 
-                        loader={myLoader}
-                        src="11.png"
-                        alt="Picture of the author"
-                        width={200}
-                        height={125}
-                      />
-                      <Image
-                        className={elementClass11}
-                        onMouseEnter={() => setElementClass11("portfolio-focus-image-div-2")} 
-                        onMouseLeave={() => setElementClass11("image-div")} 
-                        onClick={() => handleModalRender(11)} 
-                        loader={myLoader}
-                        src="12.png"
-                        alt="Picture of the author"
-                        width={200}
-                        height={125}
-                      />
-                </div>
-              </div>
               <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                   <Modal.Title>{modalTitle}</Modal.Title>
@@ -224,6 +114,11 @@ export default function Me() {
                   </Modal.Footer>
               </Modal>
           </div>
+          <div className='me-btn-container'>
+            <button title="Portfolio">
+                <Link id='about-link' href="/about/portfolio#portfolio">Portfolio</Link>
+            </button>
+        </div>
         <Footer />
       </div>
     )

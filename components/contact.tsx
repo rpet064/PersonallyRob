@@ -28,7 +28,7 @@ export default function Contact() {
         </div>
         <div className='Portfolio-container'>
             <button title="Portfolio">
-                <Link id='about-link' href="/about/me#Portfolio">Portfolio</Link>
+                <Link id='about-link' href="/about/portfolio#portfolio">Portfolio</Link>
             </button>
         </div>
         <div className="icon-container">
