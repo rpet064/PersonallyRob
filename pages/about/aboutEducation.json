@@ -1,0 +1,32 @@
+[
+    {
+        "modalTitle": "University Education",
+        "modalSubtitle":"Post-Graduate Diploma in Teaching - University of Auckland",
+        "modalDate": "January 2020 to December 2020",
+        "modalContent": [""]
+    },
+    {
+        "modalTitle": "University Education",
+        "modalSubtitle":"BSC of Psychology - Massey University",
+        "modalDate": "January 2013 to December 2015",
+        "modalContent": [""]
+    }, 
+    {
+        "modalTitle": "Programming Bootcamps",
+        "modalSubtitle":"Complete Web Development Bootcamp - Dr Angela Yu",
+        "modalDate": "November 2022 to Now",
+        "modalContent": [""]
+    }, 
+    {
+        "modalTitle": "Programming Bootcamps",
+        "modalSubtitle":"Complete Web Development Bootcamp - Dr Angela Yu",
+        "modalDate": "November 2022 to Now",
+        "modalContent": [""]
+    }, 
+    {
+        "modalTitle": "Microsoft Certified: Azure ",
+        "modalSubtitle":"Front-End Developer - Self-Employed",
+        "modalDate": "November 2022 to Now",
+        "modalContent": [""]
+    }
+]

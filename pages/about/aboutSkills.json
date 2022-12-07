@@ -1,0 +1,14 @@
+[
+    {
+        "modalTitle": "Previous Experience",
+        "modalSubtitle":"Classroom Teacher - Papatoetoe Intermediate",
+        "modalDate": "December 2020 to December 2022",
+        "modalContent": [ "Utilizing Selenium and Python Technologies to automatically manage a wide range of repetitive administrative responsibilities and automate testing of key software.", "Lead planning of team-wide Digital Technology curriculum.", "Supporting colleagues and students, with technical queries and problems.", "Manage training and support for effective use of Educational software, such as Google Learning for administrative and learning based solutions."]
+    },
+    {
+        "modalTitle": "Previous Experience",
+        "modalSubtitle":"Front-End Developer - Self-Employed",
+        "modalDate": "November 2022 to Now",
+        "modalContent": [ "Creating front-end user interfaces with React, Bootstrap, HTML and CSS", "Creating Severs/API REST endpoints with Java", "Utilizing S3 Bucket and EC2 for asset management and deployment", "Meetings and regular communication with customers to discuss project requirements and project progress"]
+    }
+]

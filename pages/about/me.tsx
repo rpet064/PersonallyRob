@@ -4,7 +4,11 @@ import { Suspense, useState } from 'react';
 import Image from 'next/image'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import aboutInfo from './aboutInfo.json';
+import aboutExperience from './aboutExperience.json'
+import aboutEducation from './aboutEducation.json'
+import aboutSkills from './aboutSkills.json'
+import aboutHobbies from './aboutHobbies.json'
+
 
 const Header = dynamic(() => import('../../components/header'), {
   suspense: true,
@@ -27,8 +31,7 @@ export default function Me() {
   const [showModal, setShowModal] = useState(false);
   // about section render info dynamically
   const [modalTitle, setModalTitle] = useState("");
-  const [modalSubtitle, setmodalSubtitle] = useState("");
-  const [modalContent, setModalContent] = useState("");
+  const [modalData, setModalData] = useState({});
   // dynamically change styling on mouseover
   const [elementClass0, setElementClass0] = useState("image-div");
   const [elementClass1, setElementClass1] = useState("image-div");
@@ -37,10 +40,8 @@ export default function Me() {
 
   function handleModalRender(arrayPosition){
     // get array position from onMouseEnter
-    // save info into let variable displayed inside modal
-    setModalTitle(aboutInfo[arrayPosition]['modalTitle']);
-    setmodalSubtitle(aboutInfo[arrayPosition]['modalSubtitle']);
-    setModalContent(aboutInfo[arrayPosition]['modalContent']);
+    // extract data from relevant JSON and position in JSON file
+
     setShowModal(true);
     console.log(modalTitle);
   }
@@ -64,7 +65,7 @@ export default function Me() {
                       className={elementClass0}
                       onMouseEnter={() => setElementClass0("focus-image-div")}
                       onMouseLeave={() => setElementClass0("image-div")} 
-                      onClick={() => handleModalRender(0)} 
+                      onClick={() => handleModalRender("experience")} 
                       loader={myLoader}
                       src="4.jpg"
                       alt="Picture of the author"
@@ -75,7 +76,7 @@ export default function Me() {
                         className={elementClass1}
                         onMouseEnter={() => setElementClass1("focus-image-div")} 
                         onMouseLeave={() => setElementClass1("image-div")} 
-                        onClick={() => handleModalRender(1)} 
+                        onClick={() => handleModalRender("education")} 
                         loader={myLoader}
                         src="1.jpg"
                         alt="Picture of the author"
@@ -88,7 +89,7 @@ export default function Me() {
                         className={elementClass2}
                         onMouseEnter={() => setElementClass2("focus-image-div")} 
                         onMouseLeave={() => setElementClass2("image-div")} 
-                        onClick={() => handleModalRender(2)} 
+                        onClick={() => handleModalRender("skills")} 
                         loader={myLoader}
                         src="3.jpg"
                         alt="Picture of the author"
@@ -99,7 +100,7 @@ export default function Me() {
                         className={elementClass3}
                         onMouseEnter={() => setElementClass3("focus-image-div")} 
                         onMouseLeave={() => setElementClass3("image-div")} 
-                        onClick={() => handleModalRender(3)} 
+                        onClick={() => handleModalRender("interests")} 
                         loader={myLoader}
                         src="2.jpg"
                         alt="Picture of the author"
@@ -112,11 +113,9 @@ export default function Me() {
               </div> */}
               <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
-                  <Modal.Title>{modalTitle}</Modal.Title>
-                  <Modal.Title>{modalSubtitle}</Modal.Title>
+                  <Modal.Title></Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    {modalContent}
                     </Modal.Body>
                   <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>
