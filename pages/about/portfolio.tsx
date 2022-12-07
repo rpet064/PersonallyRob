@@ -62,7 +62,7 @@ export default function Portfolio(){
                )})}
             </Carousel>
             </div>
-        <div>
+        <div className="portfolio-button-container">
             <button title="About">
                 <Link id='about-link' href="/about/me#about">About</Link>
             </button>

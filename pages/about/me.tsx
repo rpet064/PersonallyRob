@@ -23,26 +23,27 @@ const myLoader = ({ src, width, quality, ext }) => {
 }
 
 export default function Me() {
-  let modalTitle='This is the experience Modal';
-  let modalContent='Wow experience description, so much experience';
-
-  function handleModalRender(arrayPosition){
-    // get array position from onMouseEnter
-    // save info into let variable displayed inside modal
-    modalTitle = aboutInfo[arrayPosition]['modalTitle'];
-    modalContent = aboutInfo[arrayPosition]['modalContent'];
-    setShowModal(true);
-    console.log(modalTitle);
-  }
-
   // about section hooks render modal
   const [showModal, setShowModal] = useState(false);
+  // about section render info dynamically
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalSubtitle, setmodalSubtitle] = useState("");
+  const [modalContent, setModalContent] = useState("");
   // dynamically change styling on mouseover
   const [elementClass0, setElementClass0] = useState("image-div");
   const [elementClass1, setElementClass1] = useState("image-div");
   const [elementClass2, setElementClass2] = useState("image-div");
   const [elementClass3, setElementClass3] = useState("image-div");
 
+  function handleModalRender(arrayPosition){
+    // get array position from onMouseEnter
+    // save info into let variable displayed inside modal
+    setModalTitle(aboutInfo[arrayPosition]['modalTitle']);
+    setmodalSubtitle(aboutInfo[arrayPosition]['modalSubtitle']);
+    setModalContent(aboutInfo[arrayPosition]['modalContent']);
+    setShowModal(true);
+    console.log(modalTitle);
+  }
     return (
       <div id="about">
          <Header />
@@ -65,7 +66,7 @@ export default function Me() {
                       onMouseLeave={() => setElementClass0("image-div")} 
                       onClick={() => handleModalRender(0)} 
                       loader={myLoader}
-                      src="1.jpg"
+                      src="4.jpg"
                       alt="Picture of the author"
                       width={175}
                       height={125}
@@ -76,7 +77,7 @@ export default function Me() {
                         onMouseLeave={() => setElementClass1("image-div")} 
                         onClick={() => handleModalRender(1)} 
                         loader={myLoader}
-                        src="2.jpg"
+                        src="1.jpg"
                         alt="Picture of the author"
                         width={175}
                         height={125}
@@ -100,7 +101,7 @@ export default function Me() {
                         onMouseLeave={() => setElementClass3("image-div")} 
                         onClick={() => handleModalRender(3)} 
                         loader={myLoader}
-                        src="4.jpg"
+                        src="2.jpg"
                         alt="Picture of the author"
                         width={175}
                         height={125}
@@ -112,8 +113,11 @@ export default function Me() {
               <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                   <Modal.Title>{modalTitle}</Modal.Title>
+                  <Modal.Title>{modalSubtitle}</Modal.Title>
                   </Modal.Header>
-                  <Modal.Body>{modalContent}</Modal.Body>
+                  <Modal.Body>
+                    {modalContent}
+                    </Modal.Body>
                   <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>
                       Close

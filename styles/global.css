@@ -192,13 +192,14 @@
 @media only screen and (min-width: 1150px){
   .focus-image-div{
     width: 33%; 
-    height: 57.8%;
+    height: 59%;
     z-index: 9;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10%;
+    border: 0px solid black;
   }
 }
 
@@ -215,10 +216,11 @@
 .portfolio .carousel-container{
   width: 60%;
   margin: auto;
+  padding-bottom: 2%;
 }
 
-.portfolio-btn-container, .me-btn-container{
-  margin-top: 1.75%;
+.me-btn-container{
+  margin-top: 3%;
 }
 
     /* footer styling */

@@ -1,39 +1,39 @@
 [
     {
         "fileName": "5.png",
-        "projectName": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-        "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "projectName": "Terrsau",
+        "technology": "JQuery, PHP, MySQL, AWS EC2, AWS S3 Bucket",
+        "description": "Preparing for a General Knowledge Quiz? Struggling with Pub Quiz Nights? This is the app for you"
     },
     {
         "fileName": "6.png",
-        "projectName": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-        "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "projectName": "Moodit",
+        "technology": "React/Javascript, .NET/MySQL, Azure Logic Apps & Azure SQL DB",
+        "description": "Well-Being and Mindfullness is becoming more and more important than ever before - Track your mental well-being with Moodit"
     },
     {
         "fileName": "7.png",
-        "projectName": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "projectName": "Tindog",
         "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "description": "Website advertising the next popular app - Tindog, tinder for dogs"
     },
     {
         "fileName": "8.png",
-        "projectName": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-        "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "projectName": "Memories App",
+        "technology": "React, NodeJS, Express Backend, MongoDB Database & AWS S3 Photo Storage",
+        "description": "Your next anniversary/birthday/Christmas present for someone special - Contains photos displayed on landing page & Note-taking app"
     },
     {
         "fileName": "9.png",
-        "projectName": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-        "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "projectName": "Mike Lee Personal Website",
+        "technology": "HTML, CSS, Bootstrap",
+        "description": "Personally customized website for the one and only Mike Lee"
     },
     {
         "fileName": "10.png",
-        "projectName": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "projectName": "React, React-Bootstrap, Font-Awesome",
         "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "description": "Two teams of robots recruited from across the globe to face off in a once of a life-time dance battle"
     }
     
 ]
