@@ -223,6 +223,13 @@
   margin-top: 3%;
 }
 
+/* Modal styling */
+
+.modal-title{
+margin-left: 32%;
+font-size: 2.5rem;
+}
+
     /* footer styling */
 
 .footer p{

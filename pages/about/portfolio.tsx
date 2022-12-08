@@ -44,27 +44,27 @@ export default function Portfolio(){
             <h1 className="large-header">Robert Pether</h1>
             <h1 id="about-header" className="medium-header">Portfolio</h1>
             <div className="carousel-container">
-            <Carousel>
-            {portfolioInfo.map((info, index) => {
-                return (
-                        <Carousel.Item interval={3000} key={index} >
-                            <div onClick={() => handleModal(info)}>
-                                <Image
-                                    className="d-block w-100"
-                                    loader={myLoader}
-                                    src={info.fileName}
-                                    alt="Oops! a picture of a project is missing"
-                                    width={200}
-                                    height={275}
-                                />
-                            </div>
-                        </Carousel.Item>
-               )})}
-            </Carousel>
-            </div>
+              <Carousel>
+                {portfolioInfo.map((info, index) => {
+                    return (
+                            <Carousel.Item interval={3000} key={index} >
+                                <div onClick={() => handleModal(info)}>
+                                    <Image
+                                        className="d-block w-100"
+                                        loader={myLoader}
+                                        src={info.fileName}
+                                        alt="Oops! a picture of a project is missing"
+                                        width={200}
+                                        height={275}
+                                    />
+                                </div>
+                            </Carousel.Item>
+                  )})}
+                </Carousel>
+              </div>
         <div className="portfolio-button-container">
             <button title="About">
-                <Link id='about-link' href="/about/me#about">About</Link>
+                <Link id='about-link' href="/about/me">About</Link>
             </button>
         </div>
         <Modal show={showModal} onHide={() => setShowModal(false)}>
