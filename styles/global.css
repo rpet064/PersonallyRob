@@ -226,8 +226,14 @@
 /* Modal styling */
 
 .modal-title{
-margin-left: 32%;
+margin-left: 37%;
 font-size: 2.5rem;
+}
+
+#about-modal{
+  margin-left: 33%;
+  bottom: 15%;
+
 }
 
     /* footer styling */

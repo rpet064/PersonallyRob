@@ -111,11 +111,11 @@ export default function Me() {
               {/* <div className="image-label-container">
                 <p className="image-label-left">Skills</p><p className="image-label-right">Hobbies & Interests</p>
               </div> */}
-              <Modal show={showModal} onHide={() => setShowModal(false)}>
+              <Modal id="about-modal" show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                    <Carousel>
+                    <Carousel variant="dark">
                       {aboutExperience.map(({modalTitle, modalSubtitle, modalDate, modalContent}) => {
                         return (
                                 <Carousel.Item interval={3000} >
