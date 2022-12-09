@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { Suspense, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Carousel from 'react-bootstrap/Carousel';
-import aboutExperience from './aboutExperience.json'
-import aboutEducation from './aboutEducation.json'
-import aboutSkills from './aboutSkills.json'
-import aboutHobbies from './aboutHobbies.json'
+import ExperienceCarousel from "./aboutCarousel/experienceCarousel"
+import SkillsCarousel from "./aboutCarousel/skillsCarousel"
+import HobbiesCarousel from "./aboutCarousel/hobbiesCarousel"
+import EducationCarousel from "./aboutCarousel/educationCarousel"
 
 
 const Header = dynamic(() => import('../../components/header'), {
@@ -31,19 +30,37 @@ export default function Me() {
   // about section hooks render modal
   const [showModal, setShowModal] = useState(false);
   // about section render info dynamically
-  const [modalData, setModalData] = useState(aboutExperience);
+  const [experienceCarousel, setExperienceCarousel] = useState(false);
+  const [educationCarousel, setEducationCarousel] = useState(false);
+  const [skillsCarousel, setSkillsCarousel] = useState(false);
+  const [hobbiesCarousel, setHobbiesCarousel] = useState(false);
   // dynamically change styling on mouseover
   const [elementClass0, setElementClass0] = useState("image-div");
   const [elementClass1, setElementClass1] = useState("image-div");
   const [elementClass2, setElementClass2] = useState("image-div");
   const [elementClass3, setElementClass3] = useState("image-div");
 
-  function handleModalRender(modalType){
-    // get array position from onMouseEnter
-    // extract data from relevant JSON and position in JSON file
-    setModalData(modalType);
+  function resetModals(){
+    setExperienceCarousel(false);
+    setEducationCarousel(false);
+    setSkillsCarousel(false);
+    setHobbiesCarousel(false);
+  }
+
+  function handleModalRender(componentType){
+    // get component from modal clicked on
+    // change useState to render modal
+    resetModals();
     setShowModal(true);
-    console.log(modalType);
+    if (componentType === "experience"){
+      setExperienceCarousel(true);
+    } else if (componentType === "education"){
+      setEducationCarousel(true);
+    } else if (componentType === "skills"){
+      setSkillsCarousel(true);
+    } else if (componentType === "hobbies"){
+      setHobbiesCarousel(true);
+    }
   }
     return (
       <div id="about">
@@ -65,7 +82,7 @@ export default function Me() {
                       className={elementClass0}
                       onMouseEnter={() => setElementClass0("focus-image-div")}
                       onMouseLeave={() => setElementClass0("image-div")} 
-                      onClick={() => handleModalRender("aboutExperience")} 
+                      onClick={() => handleModalRender("experience")} 
                       loader={myLoader}
                       src="4.jpg"
                       alt="Picture of the author"
@@ -76,7 +93,7 @@ export default function Me() {
                         className={elementClass1}
                         onMouseEnter={() => setElementClass1("focus-image-div")} 
                         onMouseLeave={() => setElementClass1("image-div")} 
-                        onClick={() => handleModalRender("aboutEducation")} 
+                        onClick={() => handleModalRender("education")} 
                         loader={myLoader}
                         src="1.jpg"
                         alt="Picture of the author"
@@ -89,7 +106,7 @@ export default function Me() {
                         className={elementClass2}
                         onMouseEnter={() => setElementClass2("focus-image-div")} 
                         onMouseLeave={() => setElementClass2("image-div")} 
-                        onClick={() => handleModalRender("aboutSkills")} 
+                        onClick={() => handleModalRender("skills")} 
                         loader={myLoader}
                         src="3.jpg"
                         alt="Picture of the author"
@@ -100,7 +117,7 @@ export default function Me() {
                         className={elementClass3}
                         onMouseEnter={() => setElementClass3("focus-image-div")} 
                         onMouseLeave={() => setElementClass3("image-div")} 
-                        onClick={() => handleModalRender("aboutInterests")} 
+                        onClick={() => handleModalRender("hobbies")} 
                         loader={myLoader}
                         src="2.jpg"
                         alt="Picture of the author"
@@ -115,27 +132,13 @@ export default function Me() {
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                    <Carousel variant="dark">
-                      {aboutExperience.map(({modalTitle, modalSubtitle, modalDate, modalContent}) => {
-                        return (
-                                <Carousel.Item interval={3000} >
-                                  <h1>{modalTitle}</h1>
-                                  <h4>{modalSubtitle}</h4>
-                                  <h6>{modalDate}</h6>
-                                  <ul>
-                                    {modalContent.map((item, index) => 
-                                    (
-                                      <li key={index}>
-                                        {item}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </Carousel.Item>
-                      )})}
-                    </Carousel>
-                    <Button variant="secondary" onClick={() => setShowModal(false)}>
-                     Close
-                  </Button>
+                  {experienceCarousel && <ExperienceCarousel />}
+                  {educationCarousel && <EducationCarousel />}
+                  {skillsCarousel && <SkillsCarousel />}
+                  {hobbiesCarousel && <HobbiesCarousel />}
+                  <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  Close
+                </Button>
                 </Modal.Body>
               </Modal>
           </div>

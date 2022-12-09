@@ -183,6 +183,7 @@
   width:calc(30rem - 27)!important;
 }
 
+
 @media only screen and (max-width: 768px){
   .image-div{
     width: 10rem;
@@ -211,6 +212,20 @@
   margin-top: 10% !important;
 }
 
+.btn{
+  border: none;
+  background-color: orange;
+  margin-top: 1%;
+}
+
+.btn:hover{
+  background-color: #a2d9fd;
+}
+
+.carousel-indicators{
+  display:none;
+}
+
 /* portfolio styling */
 
 .portfolio .carousel-container{
@@ -233,10 +248,13 @@ font-size: 2.5rem;
 #about-modal{
   margin-left: 33%;
   bottom: 15%;
-
 }
 
-    /* footer styling */
+.carousel-control-next{
+  margin-left: 15%;
+}
+
+  /* footer styling */
 
 .footer p{
   padding-top: 2.1%;

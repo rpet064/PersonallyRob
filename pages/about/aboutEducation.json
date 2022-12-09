@@ -1,32 +1,32 @@
 [
     {
+        "modalTitle": "Microsoft Certified: Azure",
+        "modalSubtitle":"SC900, AZ900, DB900, AI900",
+        "modalDate": "November 2022 to Now",
+        "modalContent": ["Knowledge of fundamentals of security, compliance and Identity across Azure", "Demonstrated understanding of core data concepts and related Azure data services", "Proven knowledge of cloud concepts, Azure services, workloads and architecture"]
+    },
+    {
+        "modalTitle": "Programming Bootcamps",
+        "modalSubtitle":"Complete Web Development Bootcamp - Dr Angela Yu",
+        "modalDate": "November 2021 to April 2022", 
+        "modalContent": ["Developed range of high-quality Full-Stack MERN Applications", "Created eye-catching websites with Bootstrap, CSS & HTML", "Deep understand of SDLC, SEO, APIs and other fundamentals", "Ability using Command Line tools, Chrome Developer Tools and Git to effectively manage projects" ]
+    }, 
+    {
+        "modalTitle": "Programming Bootcamps",
+        "modalSubtitle":"100 Days of Code - Dr Angela Yu",
+        "modalDate": "July 2021 to November 2021",
+        "modalContent": ["Created user-friendly static webistes with Flask, Bootstrap, HTML and CSS", "Developed desktop applications, GUIs and games using DRY and OOP principles", "Able to use Pandas, Plotly and Matplotlib libraries to clean, analyse and display data", "Scraping data, automating and testing with BS2 and Selenium libraries"]
+    }, 
+    {
         "modalTitle": "University Education",
         "modalSubtitle":"Post-Graduate Diploma in Teaching - University of Auckland",
         "modalDate": "January 2020 to December 2020",
-        "modalContent": [""]
+        "modalContent": ["Developed communication, leadership, public speaking and classroom management skills on practical teacher training", "Deepened knowledge in key areas such as Literacy, Mathematics, Te Reo Maori, ICT and the Philosphy of Teaching", "Able to design and implement effective curriculum in core curriculum areas"]
     },
     {
         "modalTitle": "University Education",
         "modalSubtitle":"BSC of Psychology - Massey University",
         "modalDate": "January 2013 to December 2015",
-        "modalContent": [""]
-    }, 
-    {
-        "modalTitle": "Programming Bootcamps",
-        "modalSubtitle":"Complete Web Development Bootcamp - Dr Angela Yu",
-        "modalDate": "November 2022 to Now",
-        "modalContent": [""]
-    }, 
-    {
-        "modalTitle": "Programming Bootcamps",
-        "modalSubtitle":"Complete Web Development Bootcamp - Dr Angela Yu",
-        "modalDate": "November 2022 to Now",
-        "modalContent": [""]
-    }, 
-    {
-        "modalTitle": "Microsoft Certified: Azure ",
-        "modalSubtitle":"Front-End Developer - Self-Employed",
-        "modalDate": "November 2022 to Now",
-        "modalContent": [""]
+        "modalContent": ["Developed an understanding of design thinking and the design process for web development.", "Practical skills creating websites and web applications using HTML, CSS and JQuery.", "Created algorithms such as searching, sorting, and tree traversals to solve problems.", "Understanding of fundamental data structures such as stacks, queues, linked-lists, binary trees."]
     }
 ]
