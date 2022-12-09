@@ -19,19 +19,19 @@
     },
     {
         "fileName": "8.png",
-        "projectName": "Memories App",
+        "projectName": "Memories",
         "technology": "React, NodeJS, Express Backend, MongoDB Database & AWS S3 Photo Storage",
         "description": "Your next anniversary/birthday/Christmas present for someone special - Contains photos displayed on landing page & Note-taking app"
     },
     {
         "fileName": "9.png",
-        "projectName": "Mike Lee Personal Website",
+        "projectName": "Mike Lee",
         "technology": "HTML, CSS, Bootstrap",
         "description": "Personally customized website for the one and only Mike Lee"
     },
     {
         "fileName": "10.png",
-        "projectName": "React, React-Bootstrap, Font-Awesome",
+        "projectName": "PSRDB",
         "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
         "description": "Two teams of robots recruited from across the globe to face off in a once of a life-time dance battle"
     }

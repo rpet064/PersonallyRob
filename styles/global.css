@@ -204,12 +204,13 @@
 .image-div{
   position: relative;
   display: inline-block;
-  width:calc(30rem - 27)!important;
+  width:calc(30rem - 50)!important;
 }
 
 @media only screen and (max-width: 768px){
   .image-div{
-    width: 10rem;
+    width: 7.2rem;
+    height: 117.5px;
   }
 }
 
@@ -230,13 +231,13 @@
 /* About Modal styling */
 
 .modal-title{
-  margin-left: 37%;
+  margin-left: 31%;
   font-size: 2.5rem;
   }
   
   #about-modal{
-    margin-left: 33%;
-    bottom: 15%;
+    margin-left: calc(33% + 100vw - 1024);
+    bottom: calc(10vw - 50px);
   }
   
   .carousel-control-next{
@@ -252,7 +253,12 @@
 .portfolio .carousel-container{
   width: 60%;
   margin: auto;
+  height: calc(19rem + 7.5vw - 90px);
   padding-bottom: 2%;
+}
+
+.d-block{
+  height: calc(17.5rem + 7.5vw - 90px);
 }
 
 .me-btn-container{
