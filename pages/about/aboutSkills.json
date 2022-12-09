@@ -1,14 +1,27 @@
 [
     {
-        "modalTitle": "Previous Experience",
-        "modalSubtitle":"Classroom Teacher - Papatoetoe Intermediate",
-        "modalDate": "December 2020 to December 2022",
-        "modalContent": [ "Utilizing Selenium and Python Technologies to automatically manage a wide range of repetitive administrative responsibilities and automate testing of key software.", "Lead planning of team-wide Digital Technology curriculum.", "Supporting colleagues and students, with technical queries and problems.", "Manage training and support for effective use of Educational software, such as Google Learning for administrative and learning based solutions."]
+        "modalTitle": "Leadership",
+        "modalPicture": "4.jpg",
+        "modalContent": ["Showing emptathy and supporting teachers and students with difficult tasks", "Led team planning of digital technology curriculum and assemblies"]
     },
     {
-        "modalTitle": "Previous Experience",
-        "modalSubtitle":"Front-End Developer - Self-Employed",
-        "modalDate": "November 2022 to Now",
-        "modalContent": [ "Creating front-end user interfaces with React, Bootstrap, HTML and CSS", "Creating Severs/API REST endpoints with Java", "Utilizing S3 Bucket and EC2 for asset management and deployment", "Meetings and regular communication with customers to discuss project requirements and project progress"]
+        "modalTitle": " Oral & Written Mandarin",
+        "modalPicture": "4.jpg",
+        "modalContent": ["Comfortable engaging in conversations and managing day-to-day tasks", "Ability to comprehend articles, novels and song lyrics in Mandarin"]
+    },
+    {
+        "modalTitle": "Problem-Solving",
+        "modalPicture": "4.jpg",
+        "modalContent": ["Identifying problems and creating full-stack solutions with Javascript, Java and PHP", "solving puzzles and challenges - using platforms such as Chess, Codewars & CSSBatle"]
+    },
+    {
+        "modalTitle": "Communication",
+        "modalPicture": "4.jpg",
+        "modalContent": ["Praising collegues' and students' positive work and giving constructive feedback when appropiate", "Communicating instructions, advice and suggestions clearly and confidently"]
+    },
+    {
+        "modalTitle": "Collaboration",
+        "modalPicture": "4.jpg",
+        "modalContent": ["Sharing and seeking feedback on key responsiblities and tasks", "Co-planning curriculum for Literacy, Mathematics, Social Science and Physcial Education"]
     }
 ]

@@ -95,6 +95,30 @@
     display: block;
   }
 
+  /* Global modal styling */
+
+.focus-image-div{
+  border: 2px solid #a2d9fd;
+}
+
+.modal-dialog{
+  margin-top: 10% !important;
+}
+
+.btn{
+  border: none;
+  background-color: orange;
+  margin-top: 1%;
+}
+
+.btn:hover{
+  background-color: #a2d9fd;
+}
+
+.carousel-indicators{
+  display:none;
+}
+
   /* Navbar styling */
 
   .navbar{
@@ -137,7 +161,7 @@
     background-color: white;
   }
 
-  /* landing page styling */
+/* landing page styling */
 
   .homepage{
     padding-bottom: 1.75%;
@@ -183,7 +207,6 @@
   width:calc(30rem - 27)!important;
 }
 
-
 @media only screen and (max-width: 768px){
   .image-div{
     width: 10rem;
@@ -204,27 +227,25 @@
   }
 }
 
-.focus-image-div{
-  border: 2px solid #a2d9fd;
-}
+/* About Modal styling */
 
-.modal-dialog{
-  margin-top: 10% !important;
-}
-
-.btn{
-  border: none;
-  background-color: orange;
-  margin-top: 1%;
-}
-
-.btn:hover{
-  background-color: #a2d9fd;
-}
-
-.carousel-indicators{
-  display:none;
-}
+.modal-title{
+  margin-left: 37%;
+  font-size: 2.5rem;
+  }
+  
+  #about-modal{
+    margin-left: 33%;
+    bottom: 15%;
+  }
+  
+  .carousel-control-next{
+    margin-left: 15%;
+  }
+  
+  .skills-carousel-img{
+    margin: 5% 0% 5% 3%;
+  }
 
 /* portfolio styling */
 
@@ -236,22 +257,6 @@
 
 .me-btn-container{
   margin-top: 3%;
-}
-
-/* Modal styling */
-
-.modal-title{
-margin-left: 37%;
-font-size: 2.5rem;
-}
-
-#about-modal{
-  margin-left: 33%;
-  bottom: 15%;
-}
-
-.carousel-control-next{
-  margin-left: 15%;
 }
 
   /* footer styling */

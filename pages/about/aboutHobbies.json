@@ -1,14 +1,27 @@
 [
     {
-        "modalTitle": "Previous Experience",
-        "modalSubtitle":"Classroom Teacher - Papatoetoe Intermediate",
-        "modalDate": "December 2020 to December 2022",
-        "modalContent": [ "Utilizing Selenium and Python Technologies to automatically manage a wide range of repetitive administrative responsibilities and automate testing of key software.", "Lead planning of team-wide Digital Technology curriculum.", "Supporting colleagues and students, with technical queries and problems.", "Manage training and support for effective use of Educational software, such as Google Learning for administrative and learning based solutions."]
+        "modalTitle": "Languages",
+        "modalPicture": "4.jpg",
+        "modalContent": "I enjoy using Mandarin to sing karaoke terribly, watch videos and movies and read the occassional book"
     },
     {
-        "modalTitle": "Previous Experience",
-        "modalSubtitle":"Front-End Developer - Self-Employed",
-        "modalDate": "November 2022 to Now",
-        "modalContent": [ "Creating front-end user interfaces with React, Bootstrap, HTML and CSS", "Creating Severs/API REST endpoints with Java", "Utilizing S3 Bucket and EC2 for asset management and deployment", "Meetings and regular communication with customers to discuss project requirements and project progress"]
+        "modalTitle": "Body-Building",
+        "modalPicture": "4.jpg",
+        "modalContent": "I religiously go to my local gym to do a mixture of strength building and muscle building workouts"
+    },
+    {
+        "modalTitle": "Sports",
+        "modalPicture": "4.jpg",
+        "modalContent": "Lifetime Warriors Fan, occassionally tuning into the latest football, cricket, basketball and rugby games too"
+    },
+    {
+        "modalTitle": "Games and Board Games",
+        "modalPicture": "4.jpg",
+        "modalContent": "Currently playing Catan and Small World. Haven't gamed recently with my 10 year old Macbook"
+    },
+    {
+        "modalTitle": "Travel and Culture",
+        "modalPicture": "4.jpg",
+        "modalContent": "Extensively travelled all over Asia, including Tawian to visit the inlaws. Can't wait to travel to Europe and America"
     }
 ]
