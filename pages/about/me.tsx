@@ -1,28 +1,28 @@
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import { useState } from 'react';
-import Image from 'next/image'
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import { useState } from "react";
+import Image from "next/image"
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import ExperienceCarousel from "./aboutCarousel/experienceCarousel"
 import SkillsCarousel from "./aboutCarousel/skillsCarousel"
 import HobbiesCarousel from "./aboutCarousel/hobbiesCarousel"
 import EducationCarousel from "./aboutCarousel/educationCarousel"
 
 
-const Header = dynamic(() => import('../../components/header'), {
+const Header = dynamic(() => import("../../components/header"), {
   suspense: true,
 })
 
-const Navbar = dynamic(() => import('../../components/navbar'), {
+const Navbar = dynamic(() => import("../../components/navbar"), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import('../../components/footer'), {
+const Footer = dynamic(() => import("../../components/footer"), {
   suspense: true,
 })
 
-const myLoader = ({ src, width, quality, ext }) => {
+const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
@@ -142,9 +142,9 @@ export default function Me() {
                 </Modal.Body>
               </Modal>
           </div>
-          <div className='me-btn-container'>
+          <div className="me-btn-container">
             <button className="portfolio-btn" title="Portfolio">
-                <Link id='about-link' href="/about/portfolio">Portfolio</Link>
+                <Link id="about-link" href="/about/portfolio">Portfolio</Link>
             </button>
         </div>
         <Footer />

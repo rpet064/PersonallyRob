@@ -1,12 +1,10 @@
-import dynamic from 'next/dynamic';
-import { Suspense } from 'react';
-import Image from 'next/image'
+import Image from "next/image"
 
-const myLoader = ({ src, width, quality, ext }) => {
+const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
-export default function About(props) {
+export default function About() {
     return (
       <div className="homepage">
         <h1 className="large-header">Robert Pether</h1>
@@ -18,7 +16,7 @@ export default function About(props) {
               width={175}
               height={200}
               />
-      </div>
+          </div>
     </div>
     )
   }

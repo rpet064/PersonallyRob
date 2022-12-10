@@ -1,9 +1,8 @@
-import dynamic from 'next/dynamic';
-import { Suspense } from 'react';
-import Link from 'next/link';
+import dynamic from "next/dynamic";
+import Link from "next/link";
 
 
-const DownloadPDF = dynamic(() => import('./downloadPDF'), {
+const DownloadPDF = dynamic(() => import("./downloadPDF"), {
   suspense: true,
 })
 
@@ -19,5 +18,3 @@ export default function Navbar() {
       </div>
     )
   }
-
-  // <a></a>
