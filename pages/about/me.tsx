@@ -89,16 +89,16 @@ export default function Me() {
                       width={175}
                       height={125}
                       />
-                        <Image
-                        className={elementClass1}
-                        onMouseEnter={() => setElementClass1("focus-image-div")} 
-                        onMouseLeave={() => setElementClass1("image-div")} 
-                        onClick={() => handleModalRender("education")} 
-                        loader={myLoader}
-                        src="1.jpg"
-                        alt="Picture of the author"
-                        width={175}
-                        height={125}
+                      <Image
+                      className={elementClass1}
+                      onMouseEnter={() => setElementClass1("focus-image-div")} 
+                      onMouseLeave={() => setElementClass1("image-div")} 
+                      onClick={() => handleModalRender("education")} 
+                      loader={myLoader}
+                      src="1.jpg"
+                      alt="Picture of the author"
+                      width={175}
+                      height={125}
                       />
                   </div>
                   <div className="row-2">
@@ -112,7 +112,7 @@ export default function Me() {
                         alt="Picture of the author"
                         width={175}
                         height={125}
-                        />
+                      />
                       <Image
                         className={elementClass3}
                         onMouseEnter={() => setElementClass3("focus-image-div")} 
@@ -143,7 +143,7 @@ export default function Me() {
               </Modal>
           </div>
           <div className='me-btn-container'>
-            <button title="Portfolio">
+            <button className="portfolio-btn" title="Portfolio">
                 <Link id='about-link' href="/about/portfolio">Portfolio</Link>
             </button>
         </div>

@@ -11,15 +11,15 @@
     scroll-behavior: smooth;
   }
 
-  a{
-    color: black;
-    text-decoration: none;
-  }
-  
   body{
     min-height: 95vh;
     display: flex;
     flex-direction: column;
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
   }
 
   button{
@@ -95,7 +95,7 @@
     display: block;
   }
 
-  /* Global modal styling */
+  /* Modal styling */
 
 .focus-image-div{
   border: 2px solid #a2d9fd;
@@ -163,9 +163,9 @@
 
 /* landing page styling */
 
-  .homepage{
-    padding-bottom: 1.75%;
-  }
+.homepage{
+  padding-bottom: 1.75%;
+}
 
 .icon-container{
   border: 1.5px solid grey;
@@ -228,7 +228,7 @@
   }
 }
 
-/* About Modal styling */
+/* about modal styling */
 
 .modal-title{
   margin-left: 31%;
@@ -267,8 +267,8 @@
 
 @media (max-width: 768px){
   .portfolio-btn{
-    margin-left: 1.5%;
-    margin-top: 1.5%;
+    padding-left: 0.5%;
+    padding-top: 0.5%;
   }
 }
 

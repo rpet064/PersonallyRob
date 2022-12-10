@@ -1,4 +1,4 @@
-import AboutHobbies from '../aboutHobbies.json'
+import AboutHobbies from '../aboutJSON/aboutHobbies.json'
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image'
 
@@ -9,21 +9,21 @@ const myLoader = ({ src, width, quality, ext }) => {
 export default function HobbiesCarousel(){
     return(
         <Carousel variant="dark">
-        {AboutHobbies.map(({modalTitle, modalPicture, modalContent}) => {
-          return (
-                  <Carousel.Item interval={3000} >
-                    <h1>{modalTitle}</h1>
-                    <Image
-                      className="skills-carousel-img"
-                      loader={myLoader}
-                      src={modalPicture}
-                      alt="Hobby picture was here"
-                      width={175}
-                      height={125}
-                      />
-                    <p>{modalContent}</p>
-                  </Carousel.Item>
-        )})}
+          {AboutHobbies.map(({modalTitle, modalPicture, modalContent}) => {
+            return (
+              <Carousel.Item interval={3000} >
+                <h1>{modalTitle}</h1>
+                <Image
+                  className="skills-carousel-img"
+                  loader={myLoader}
+                  src={modalPicture}
+                  alt="Hobby picture was here"
+                  width={175}
+                  height={125}
+                  />
+                <p>{modalContent}</p>
+              </Carousel.Item>
+          )})}
       </Carousel>
     )
 }

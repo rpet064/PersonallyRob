@@ -7,6 +7,13 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 
+interface infoSettings {
+  projectName: string;
+  technology: string;
+  description: string;
+}
+
+declare function handleModal(info: infoSettings): void;
 
 const Header = dynamic(() => import('../../components/header'), {
   suspense: true,
@@ -20,7 +27,7 @@ const Footer = dynamic(() => import('../../components/footer'), {
   suspense: true,
 })
 
-const myLoader = ({ src, width, quality, ext }) => {
+const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
@@ -30,7 +37,7 @@ export default function Portfolio(){
     const [modalTechnology, setModalTechnology] = useState("");
     const [modalDescription, setModalDescription] = useState("");
 
-    function handleModal(info){
+    function handleModal(info: infoSettings){
         setModalTitle(info.projectName);
         setModalTechnology(info.technology);
         setModalDescription(info.description);
@@ -46,19 +53,19 @@ export default function Portfolio(){
             <div className="carousel-container">
               <Carousel>
                 {portfolioInfo.map((info, index) => {
-                    return (
-                            <Carousel.Item interval={3000} key={index} >
-                                <div onClick={() => handleModal(info)}>
-                                    <Image
-                                        className="d-block w-100"
-                                        loader={myLoader}
-                                        src={info.fileName}
-                                        alt="Oops! a picture of a project is missing"
-                                        width={200}
-                                        height={275}
-                                    />
-                                </div>
-                            </Carousel.Item>
+                  return (
+                    <Carousel.Item interval={3000} key={index} >
+                        <div onClick={() => handleModal(info)}>
+                            <Image
+                              className="d-block w-100"
+                              loader={myLoader}
+                              src={info.fileName}
+                              alt="Oops! a picture of a project is missing"
+                              width={200}
+                              height={275}
+                            />
+                        </div>
+                    </Carousel.Item>
                   )})}
                 </Carousel>
               </div>
@@ -68,19 +75,19 @@ export default function Portfolio(){
             </button>
         </div>
         <Modal show={showModal} onHide={() => setShowModal(false)}>
-                <Modal.Header closeButton>
-                  <Modal.Title>{modalTitle}</Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <h5>{modalTechnology}</h5>
-                    <p>{modalDescription}</p>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button variant="secondary" onClick={() => setShowModal(false)}>
-                      Close
-                    </Button>
-                  </Modal.Footer>
-              </Modal>
+          <Modal.Header closeButton>
+            <Modal.Title>{modalTitle}</Modal.Title>
+            </Modal.Header>
+              <Modal.Body>
+                <h5>{modalTechnology}</h5>
+                <p>{modalDescription}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  Close
+                </Button>
+              </Modal.Footer>
+          </Modal>
         <Footer />
     </div>
     )
