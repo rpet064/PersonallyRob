@@ -267,7 +267,7 @@
 
 @media (max-width: 768px){
   .portfolio-btn{
-    padding: auto;
+    padding: 0% 0.1%;
   }
 }
 
