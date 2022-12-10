@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import { Suspense, useState } from 'react';
-import Image from 'next/image'
-import portfolioInfo from './portfolioInfo.json'
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Carousel from 'react-bootstrap/Carousel';
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import { Suspense, useState } from "react";
+import Image from "next/image"
+import portfolioInfo from "./portfolioInfo.json"
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Carousel from "react-bootstrap/Carousel";
 
 interface infoSettings {
   projectName: string;
@@ -13,17 +13,15 @@ interface infoSettings {
   description: string;
 }
 
-declare function handleModal(info: infoSettings): void;
-
-const Header = dynamic(() => import('../../components/header'), {
+const Header = dynamic(() => import("../../components/header"), {
   suspense: true,
 })
 
-const Navbar = dynamic(() => import('../../components/navbar'), {
+const Navbar = dynamic(() => import("../../components/navbar"), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import('../../components/footer'), {
+const Footer = dynamic(() => import("../../components/footer"), {
   suspense: true,
 })
 
@@ -71,7 +69,7 @@ export default function Portfolio(){
               </div>
         <div className="portfolio-button-container">
             <button title="About">
-                <Link id='about-link' href="/about/me">About</Link>
+                <Link id="about-link" href="/about/me">About</Link>
             </button>
         </div>
         <Modal show={showModal} onHide={() => setShowModal(false)}>
