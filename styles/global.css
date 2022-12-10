@@ -265,6 +265,13 @@
   margin-top: 3%;
 }
 
+@media (max-width: 768px){
+  .portfolio-btn{
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+  }
+}
+
   /* footer styling */
 
 .footer p{
