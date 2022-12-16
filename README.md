@@ -1,6 +1,6 @@
 # About
-The solution for getting noticed on your next job search
-Minimalistic, Eye-Catching design
+The solution for getting noticed on your next job search.
+Minimalistic, Eye-Catching design.
 
 # Front-End
 React/NextJS Front-End, 
