@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Link from 'next/link';
+import Head from "next/head";
 
 export default function Header() {
     return (

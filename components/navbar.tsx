@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
       <div className="navbar">
         <div title="Home" className="logo">
-        <Link id='about-link' href="/"><h3>RP.</h3></Link>
+        <Link id='about-link' href="./"><h3>RP.</h3></Link>
         </div>
         <div className="nav-items">
           <DownloadPDF />

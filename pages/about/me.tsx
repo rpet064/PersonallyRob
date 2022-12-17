@@ -50,6 +50,7 @@ export default function Me() {
   function handleModalRender(componentType){
     // get component from modal clicked on
     // change useState to render modal
+    // reset modals before trigger useState
     resetModals();
     setShowModal(true);
     if (componentType === "experience"){

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useState } from "react";
+import { Modal, Button } from 'react-bootstrap';
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +17,7 @@ const myLoader = ({ src }) => {
 }
 
 export default function Contact() {
+    const [showModal, setShowModal] = useState(false);
     return (
     <div>
         <div>
@@ -33,7 +36,21 @@ export default function Contact() {
             <a title="Linkedin" href="https://www.linkedin.com/in/robert-pether-ba9968113"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a title="Email" href="mailto:rpether@hotmail.co.nz"><FontAwesomeIcon icon={faEnvelope} /></a>
             <a title="youtube" href="https://www.youtube.com/@rpet064/featured"><FontAwesomeIcon icon={faYoutube} /></a>
+            <a title="ChineseNow" onClick={() => setShowModal(true)} className="chinese-now">CN</a>
         </div>
+        {/* Coming soon modal */}
+        <Modal show={showModal} onHide={() => setShowModal(false)}>
+          <Modal.Header closeButton>
+            </Modal.Header>
+              <Modal.Body>
+                <h2>ChineseNow Coming Soon</h2>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  Close
+                </Button>
+              </Modal.Footer>
+          </Modal>
     </div>
     )
 }
