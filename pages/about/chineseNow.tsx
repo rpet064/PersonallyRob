@@ -55,8 +55,7 @@ export default function ChineseNow() {
         !isLoading && pageData.map(({videoLink, label, resourceLink, sectionClass},  index: number) => {
           return (
         <div key={index}>
-        <CollapsibleSection>
-          <h1 className="extralargetext">{label}</h1>
+        <CollapsibleSection label={label}>
           <div className={styles.playerwrapper}>
             <ReactPlayer url={videoLink} />
           </div>

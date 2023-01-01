@@ -4,9 +4,20 @@ import styles from '../../../styles/Home.module.css'
 const CollapsibleSection = (props: any) => {
     const [open, setOpen] = useState(false);
 
+    function setCollapsible(){
+        if (open === false){
+            setOpen(true)
+        } else {
+            setOpen(false)
+        }
+    }
+
     return (
         <section className={styles.collapsible}>
-            <div onClick={() => setOpen(true)}>{props.children}</div>
+            <div onClick={setCollapsible}>
+                <h1 className={styles.extralargetext}>{props.label}</h1>
+                {open && props.children}
+            </div>
         </section>
     )
 }
