@@ -13,10 +13,6 @@ interface infoSettings {
   description: string;
 }
 
-const Header = dynamic(() => import("../../components/header"), {
-  suspense: true,
-})
-
 const Navbar = dynamic(() => import("../../components/navbar"), {
   suspense: true,
 })
@@ -44,7 +40,6 @@ export default function Portfolio(){
 
     return(
         <div className="portfolio" id="portfolio">
-            <Header />
             <Navbar />
             <h1 className="large-header">Robert Pether</h1>
             <h1 id="about-header" className="medium-header">Portfolio</h1>

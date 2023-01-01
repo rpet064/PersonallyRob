@@ -48,6 +48,30 @@
     margin: 0%;
   }
 
+  section{
+    min-width: 100%;
+  }
+  
+  .extralargetext{
+    font-size: 3.5rem;
+    padding: 7.5% 0% 4% 0%;
+  }
+  
+  .largetext{
+    font-size: 2rem;
+    padding-top: 5%;
+    padding-bottom: 4%;
+  }
+  
+  .mediumtext{
+    font-size: 1.5rem;
+    padding: 1%;
+  }
+  
+  .smalltext{
+    font-size: 1.1rem;
+  }
+
   .large-header{
     font-size: 4.75rem;
     margin-bottom: 1%;
@@ -291,3 +315,4 @@
     padding-top: 3.1%;
   }
 }
+

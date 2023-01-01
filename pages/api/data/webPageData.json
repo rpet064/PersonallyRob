@@ -1,0 +1,27 @@
+[
+    {
+        "sectionClass": "styles.sectionone",
+        "label": "Begineer 初學",
+        "videoLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+        "resourceLink": ["Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit" ]
+    },
+    {
+        "sectionClass": "styles.sectiontwo",
+        "label": "Intermediate 中級",
+        "videoLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+        "resourceLink": ["Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit" ]
+    },
+    {
+        "sectionClass": "styles.sectionthree",
+        "label": "Advanced 高等",
+        "videoLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+        "resourceLink": ["Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit" ]
+    },
+    {
+        "sectionClass": "styles.sectionfour",
+        "label": "Expert 專家",
+        "videoLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+        "resourceLink": ["Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit", "Nullam non nisi est sit" ]
+    }
+]
+

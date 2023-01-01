@@ -9,11 +9,6 @@ import SkillsCarousel from "./aboutCarousel/skillsCarousel"
 import HobbiesCarousel from "./aboutCarousel/hobbiesCarousel"
 import EducationCarousel from "./aboutCarousel/educationCarousel"
 
-
-const Header = dynamic(() => import("../../components/header"), {
-  suspense: true,
-})
-
 const Navbar = dynamic(() => import("../../components/navbar"), {
   suspense: true,
 })
@@ -48,6 +43,7 @@ export default function Me() {
   }
 
   function handleModalRender(componentType){
+
     // get component from modal clicked on
     // change useState to render modal
     // reset modals before trigger useState
@@ -65,7 +61,6 @@ export default function Me() {
   }
     return (
       <div id="about">
-         <Header />
           <Navbar />
             <h1 className="large-header">Robert Pether</h1>
             <h1 id="about-header" className="medium-header">About</h1>
