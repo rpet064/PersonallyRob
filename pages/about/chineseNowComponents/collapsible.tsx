@@ -2,8 +2,10 @@ import { useState } from 'react'
 import styles from '../../../styles/Home.module.css'
 
 const CollapsibleSection = (props: any) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(props.initialState);
 
+
+    // this function manages stage of collapsible sections
     function setCollapsible(){
         if (open === false){
             setOpen(true)
@@ -14,7 +16,7 @@ const CollapsibleSection = (props: any) => {
 
     return (
         <section className={styles.collapsible}>
-            <div onClick={setCollapsible}>
+            <div onClick={setCollapsible} title={props.title}>
                 <h1 className={styles.extralargetext}>{props.label}</h1>
                 {open && props.children}
             </div>

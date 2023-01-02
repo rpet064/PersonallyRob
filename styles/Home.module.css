@@ -9,6 +9,12 @@
   padding: 0%;
 }
 
+.main section{
+  min-width: 100%;
+  padding-bottom: 3%;
+  cursor: pointer;
+}
+
 .navbar{
   max-height: 3rem;
   padding: 0.75% 0% 1% 1.75%;
@@ -69,12 +75,11 @@
 }
 
 .cta button{
-  padding: 1.25%;
-  border-radius: 17.5%;
-  margin: 1%;
   background-color: #DC3535;
   color: antiquewhite;
   border: grey solid 0.5px;
+  width: 7.25rem;
+  height: 3.75rem;
 }
 
 .footer{

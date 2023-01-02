@@ -27,7 +27,9 @@ export default function ChineseNow() {
       "sectionClass":"",
       "label":"",
       "videoLink":"",
-      "resourceLink":[""]
+      "resourceLink":[""],
+      "initialState": "",
+      "title": ""
       }
     ]
   );
@@ -52,10 +54,10 @@ export default function ChineseNow() {
       <div className={styles.maincontent}>
         { 
         // map array of dicts onto children elements of collapsibleSection component
-        !isLoading && pageData.map(({videoLink, label, resourceLink, sectionClass},  index: number) => {
+        !isLoading && pageData.map(({videoLink, label, resourceLink, sectionClass, initialState, title},  index: number) => {
           return (
         <div key={index}>
-        <CollapsibleSection label={label}>
+        <CollapsibleSection label={label} initialState={initialState} title={title}>
           <div className={styles.playerwrapper}>
             <ReactPlayer url={videoLink} />
           </div>
