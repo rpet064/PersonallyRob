@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import styles from '../../styles/Home.module.css'
 
 
 const DownloadPDF = dynamic(() => import("./downloadPDF"), {
@@ -8,11 +9,11 @@ const DownloadPDF = dynamic(() => import("./downloadPDF"), {
 
 export default function Navbar() {
     return (
-      <div className="navbar">
-        <div title="Home" className="logo">
+      <div className={styles.navbar}>
+        <div title="Home" className={styles.logo}>
         <Link id='about-link' href="/"><h3>RP.</h3></Link>
         </div>
-        <div className="nav-items">
+        <div className={styles.navitems}>
           <DownloadPDF />
         </div>
       </div>

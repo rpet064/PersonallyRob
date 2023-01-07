@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from '../../../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 const CollapsibleSection = (props: any) => {
     const [open, setOpen] = useState(props.initialState);

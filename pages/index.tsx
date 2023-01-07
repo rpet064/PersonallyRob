@@ -1,25 +1,24 @@
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 
-
-const Header = dynamic(() => import('../components/header'), {
+// dynamically render components on landing page
+const Header = dynamic(() => import('../components/landingPage/header'), {
   suspense: true,
 })
 
-const Navbar = dynamic(() => import('../components/navbar'), {
+const Navbar = dynamic(() => import('../components/landingPage/navbar'), {
   suspense: true,
 })
 
-const About = dynamic(() => import('../components/about'), {
+const About = dynamic(() => import('../components/landingPage/about'), {
   suspense: true,
 })
 
-
-const Contact = dynamic(() => import('../components/contact'), {
+const Contact = dynamic(() => import('../components/landingPage/contact'), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import('../components/footer'), {
+const Footer = dynamic(() => import('../components/landingPage/footer'), {
   suspense: true,
 })
 

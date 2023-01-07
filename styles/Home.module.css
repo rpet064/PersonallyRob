@@ -1,3 +1,270 @@
+/* Global Header Styling */
+  
+.extralargetext{
+  font-size: 3.5rem;
+  padding: 7.5% 0% 4% 0%;
+  cursor: pointer;
+}
+
+.largetext{
+  font-size: 2rem;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.mediumtext{
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+.smalltext{
+  font-size: 1.1rem;
+}
+
+.largeheader{
+  font-size: 4.75rem;
+  margin-bottom: 1%;
+}
+
+@media (max-width: 768px) {
+  .largeheader{
+    margin: 3%;
+  }
+}
+
+.mediumheader{
+  font-size: 2rem;
+  margin: 0.1% 1.5% 1.5% 1.5%;
+}
+
+#portfolio-header{
+  padding-top: 1.5%;
+}
+
+@media (max-width: 768px) {
+  .mediumheader{
+    padding: 2.5%;
+  }
+}
+
+/* Global Navbar Styling */
+
+.navbar{
+height: 3rem;
+width: 100%;
+padding: 1%;
+display: flex;
+flex-direction: row;
+flex-basis: auto; 
+}
+
+.logo{
+margin-right: auto;
+padding-left: 2%;
+}
+
+.logo h3{
+font-size: 2.2rem;
+}
+
+.navitems{
+margin-left: auto;
+padding-right: 10%;
+min-width: 5rem;
+margin-top: 0.5%;
+}
+
+.navbar select, .navbar option{
+height: 3.25rem;
+width: 7.5rem;
+font-size: 1rem;
+border-width: 2px;
+border-radius: 10%;
+padding: 10%;
+margin-top: 3%;
+background-color: white;
+}
+
+/* Global Footer Styling */
+
+.footer p{
+padding-top: 2.1%;
+font-size: 0.8rem;
+margin-top: auto;
+}
+
+@media (max-width: 768px) {
+.footer p{
+  padding-top: 3.1%;
+}
+}
+
+@media (max-width: 800px) {
+  #about-header, #portfolio-header{
+    font-size: 2.5rem;
+    padding: 1.5% 2%;
+  }
+}
+
+ /* image styling */
+
+ .imagecontainer{
+  height: auto;
+  width: 60%;
+  margin: auto;
+  overflow: none !important;
+}
+
+.row1, .row2{
+  margin: auto;
+  display: block;
+}
+
+/* Modal styling */
+
+.focusimagediv{
+border: 2px solid #a2d9fd;
+}
+
+.modaldialog{
+margin-top: 10% !important;
+}
+
+.btn{
+border: none;
+background-color: orange;
+margin-top: 1%;
+}
+
+.btn:hover{
+background-color: #a2d9fd;
+}
+
+.carousel-indicators{
+display:none;
+}
+
+/* landing page styling */
+
+.homepage{
+padding-bottom: 1.75%;
+}
+
+.iconcontainer{
+border: 1.5px solid grey;
+border-width: 1px;
+width: 20%;
+margin: auto; 
+border-radius: 5%;
+}
+
+.chinesenow{ 
+  font-size:1.3rem;
+  padding: 3.5% 1% 2% 1.5%;
+  cursor: pointer;
+  position: relative;
+  bottom: 0.33rem;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+.iconcontainer{
+  border: 1.5px solid grey;
+  border-width: 1px;
+  width: 33%;
+  margin: auto; 
+  border-radius: 5%;
+}
+}
+
+/* about me page styling */
+
+.imagelabelcontainer{
+width: 40%;
+margin: auto;
+display: block;
+}
+
+.imagelabelleft{
+float: left;
+}
+
+.imagelabelright{
+float: right;
+}
+
+.imagediv{
+position: relative;
+display: inline-block;
+width:calc(30rem - 50)!important;
+}
+
+@media only screen and (max-width: 768px){
+.imagediv{
+  width: 7.2rem;
+  height: 117.5px;
+}
+}
+
+@media only screen and (min-width: 1150px){
+.focusimagediv{
+  width: 33%; 
+  height: 59%;
+  z-index: 9;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  border: 0px solid black;
+}
+}
+
+/* about modal styling */
+
+.modaltitle{
+margin-left: 31%;
+font-size: 2.5rem;
+}
+
+#about-modal{
+  margin-left: calc(33% + 100vw - 1024);
+  bottom: calc(10vw - 50px);
+}
+
+.carousel-control-next{
+  margin-left: 15%;
+}
+
+.skillscarouselimg{
+  margin: 5% 0% 5% 3%;
+}
+
+/* portfolio styling */
+
+.portfolio .carouselcontainer{
+width: 60%;
+margin: auto;
+height: calc(19rem + 7.5vw - 90px);
+padding-bottom: 2%;
+}
+
+.d-block{
+height: calc(17.5rem + 7.5vw - 90px);
+}
+
+.mebtncontainer{
+margin-top: 3%;
+}
+
+@media (max-width: 768px){
+.portfoliobtn{
+  padding: 0% 0.1%;
+}
+}
+
+/* ChineseNow Styling */
+
 .main {
   display: flex;
   flex-direction: column;
@@ -80,14 +347,4 @@
   border: grey solid 0.5px;
   width: 7.25rem;
   height: 3.75rem;
-}
-
-.footer{
-  min-height: 3.25rem;
-  border: black solid 1px;
-}
-
-.footer p{
-  padding-top: 1.125%;
-  color: grey;
 }

@@ -1,4 +1,4 @@
-import AboutEducation from '../aboutJSON/aboutEducation.json'
+import AboutEducation from './aboutJSON/aboutEducation.json'
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function EducationCarousel(){

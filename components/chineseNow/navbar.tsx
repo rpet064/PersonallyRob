@@ -1,4 +1,4 @@
-import styles from '../../../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from '../../styles/Home.module.css'
 import { useState } from "react";
 import { Modal, Button } from 'react-bootstrap';
 import "@fortawesome/fontawesome-svg-core/styles.css"
@@ -21,22 +22,22 @@ export default function Contact() {
     return (
     <div>
         <div>
-            <h1 title="About" className="medium-header">Junior React Developer</h1>
+            <h1 title="About" className={styles.mediumheader}>Junior React Developer</h1>
             <button title="About">
                 <Link id="about-link" href="/about/me#about">About</Link>
             </button>
         </div>
-        <div className="Portfolio-container">
-            <button className="portfolio-btn" title="Portfolio">
+        <div className={styles.portfoliocontainer}>
+            <button className={styles.portfoliobtn} title="Portfolio">
                 <Link id="about-link" href="/about/portfolio#portfolio">Portfolio</Link>
             </button>
         </div>
-        <div className="icon-container">
+        <div className={styles.iconcontainer}>
             <a title="Github" href="https://github.com/rpet064"><FontAwesomeIcon icon={faGithub} /></a>
             <a title="Linkedin" href="https://www.linkedin.com/in/robert-pether-ba9968113"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a title="Email" href="mailto:rpether@hotmail.co.nz"><FontAwesomeIcon icon={faEnvelope} /></a>
             <a title="youtube" href="https://www.youtube.com/@rpet064/featured"><FontAwesomeIcon icon={faYoutube} /></a>
-            <a title="ChineseNow" onClick={() => setShowModal(true)} className="chinese-now">CN</a>
+            <a title="ChineseNow" onClick={() => setShowModal(true)} className={styles.chinesenow}>CN</a>
         </div>
         {/* Coming soon modal */}
         <Modal show={showModal} onHide={() => setShowModal(false)}>

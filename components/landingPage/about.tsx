@@ -1,4 +1,5 @@
 import Image from "next/image"
+import styles from '../../styles/Home.module.css'
 
 const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
@@ -6,9 +7,9 @@ const myLoader = ({ src }) => {
 
 export default function About() {
     return (
-      <div className="homepage">
-        <h1 className="large-header">Robert Pether</h1>
-         <div className="image-container">
+      <div className={styles.homepage}>
+        <h1 className={styles.largeheader}>Robert Pether</h1>
+         <div className={styles.imagecontainer}>
           <Image
               loader={myLoader}
               src="robert_pether.png"

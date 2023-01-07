@@ -1,20 +1,21 @@
-import CollapsibleSection from './chineseNowComponents/collapsible'
-import CallToAction from './chineseNowComponents/callToAction'
+import CollapsibleSection from '../../components/chineseNow/collapsible'
+import CallToAction from '../../components/chineseNow/callToAction'
 // import { Inter } from '@next/font/google'
 import styles from '../../styles/Home.module.css'
 import { useEffect, useState } from 'react'
-const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 import dynamic from "next/dynamic";
 
-const Header = dynamic(() => import("../../components/header"), {
+const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
+
+const Header = dynamic(() => import("../../components/landingPage/header"), {
     suspense: true,
   })
   
-  const Navbar = dynamic(() => import("../../components/navbar"), {
+  const Navbar = dynamic(() => import("../../components/landingPage/navbar"), {
     suspense: true,
   })
   
-  const Footer = dynamic(() => import("../../components/footer"), {
+  const Footer = dynamic(() => import("../../components/landingPage/footer"), {
     suspense: true,
   })
 

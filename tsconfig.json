@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    "pages/about/aboutCarousel"
+    "components/about/aboutCarousel"
   ],
   "exclude": [
     "node_modules"

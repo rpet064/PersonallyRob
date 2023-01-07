@@ -1,5 +1,6 @@
-import aboutExperience from '../aboutJSON/aboutExperience.json'
+import aboutExperience from './aboutJSON/aboutExperience.json'
 import Carousel from 'react-bootstrap/Carousel';
+import styles from '../../styles/Home.module.css'
 
 export default function ExperienceCarousel(){
     return(

@@ -2,10 +2,12 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Suspense, useState } from "react";
 import Image from "next/image"
+// to move into backend as a GET request
 import portfolioInfo from "./portfolioInfo.json"
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
+import styles from '../../styles/Home.module.css'
 
 interface infoSettings {
   projectName: string;
@@ -13,11 +15,11 @@ interface infoSettings {
   description: string;
 }
 
-const Navbar = dynamic(() => import("../../components/navbar"), {
+const Navbar = dynamic(() => import("../../components/landingPage/navbar"), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import("../../components/footer"), {
+const Footer = dynamic(() => import("../../components/landingPage/footer"), {
   suspense: true,
 })
 
@@ -41,8 +43,8 @@ export default function Portfolio(){
     return(
         <div className="portfolio" id="portfolio">
             <Navbar />
-            <h1 className="large-header">Robert Pether</h1>
-            <h1 id="about-header" className="medium-header">Portfolio</h1>
+            <h1 className={styles.largeheader}>Robert Pether</h1>
+            <h1 id="about-header" className={styles.mediumheader}>Portfolio</h1>
             <div className="carousel-container">
               <Carousel>
                 {portfolioInfo.map((info, index) => {
@@ -62,7 +64,7 @@ export default function Portfolio(){
                   )})}
                 </Carousel>
               </div>
-        <div className="portfolio-button-container">
+        <div className={styles.portfoliobuttoncontainer}>
             <button title="About">
                 <Link id="about-link" href="/about/me">About</Link>
             </button>

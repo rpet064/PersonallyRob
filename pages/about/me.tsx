@@ -4,16 +4,17 @@ import { useState } from "react";
 import Image from "next/image"
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import ExperienceCarousel from "./aboutCarousel/experienceCarousel"
-import SkillsCarousel from "./aboutCarousel/skillsCarousel"
-import HobbiesCarousel from "./aboutCarousel/hobbiesCarousel"
-import EducationCarousel from "./aboutCarousel/educationCarousel"
+import ExperienceCarousel from "../../components/about/experienceCarousel"
+import SkillsCarousel from "../../components/about/skillsCarousel"
+import HobbiesCarousel from "../../components/about/hobbiesCarousel"
+import EducationCarousel from "../../components/about/educationCarousel"
+import styles from '../../styles/Home.module.css'
 
-const Navbar = dynamic(() => import("../../components/navbar"), {
+const Navbar = dynamic(() => import("../../components/landingPage/navbar"), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import("../../components/footer"), {
+const Footer = dynamic(() => import("../../components/landingPage/footer"), {
   suspense: true,
 })
 
@@ -22,13 +23,16 @@ const myLoader = ({ src }) => {
 }
 
 export default function Me() {
+
   // about section hooks render modal
   const [showModal, setShowModal] = useState(false);
+
   // about section render info dynamically
   const [experienceCarousel, setExperienceCarousel] = useState(false);
   const [educationCarousel, setEducationCarousel] = useState(false);
   const [skillsCarousel, setSkillsCarousel] = useState(false);
   const [hobbiesCarousel, setHobbiesCarousel] = useState(false);
+
   // dynamically change styling on mouseover
   const [elementClass0, setElementClass0] = useState("image-div");
   const [elementClass1, setElementClass1] = useState("image-div");
@@ -62,8 +66,8 @@ export default function Me() {
     return (
       <div id="about">
           <Navbar />
-            <h1 className="large-header">Robert Pether</h1>
-            <h1 id="about-header" className="medium-header">About</h1>
+            <h1 className={styles.largeheader}>Robert Pether</h1>
+            <h1 id="about-header" className={styles.mediumheader}>About</h1>
             {/* <div className="image-label-container">
               <div>
                 <p className="image-label-left">Education</p>
@@ -73,11 +77,11 @@ export default function Me() {
               </div>
             </div> */}
               <div className="image-container">
-                <div className="row-1">
+                <div className={styles.row1}>
                     <Image
                       className={elementClass0}
-                      onMouseEnter={() => setElementClass0("focus-image-div")}
-                      onMouseLeave={() => setElementClass0("image-div")} 
+                      onMouseEnter={() => setElementClass0("focusimagediv")}
+                      onMouseLeave={() => setElementClass0("imagediv")} 
                       onClick={() => handleModalRender("experience")} 
                       loader={myLoader}
                       src="4.jpg"
@@ -87,8 +91,8 @@ export default function Me() {
                       />
                       <Image
                       className={elementClass1}
-                      onMouseEnter={() => setElementClass1("focus-image-div")} 
-                      onMouseLeave={() => setElementClass1("image-div")} 
+                      onMouseEnter={() => setElementClass1("focusimagediv")} 
+                      onMouseLeave={() => setElementClass1("imagediv")} 
                       onClick={() => handleModalRender("education")} 
                       loader={myLoader}
                       src="1.jpg"
@@ -97,7 +101,7 @@ export default function Me() {
                       height={125}
                       />
                   </div>
-                  <div className="row-2">
+                  <div className={styles.row2}>
                         <Image
                         className={elementClass2}
                         onMouseEnter={() => setElementClass2("focus-image-div")} 
@@ -138,8 +142,8 @@ export default function Me() {
                 </Modal.Body>
               </Modal>
           </div>
-          <div className="me-btn-container">
-            <button className="portfolio-btn" title="Portfolio">
+          <div className={styles.mebtncontainer}>
+            <button className={styles.portfoliobtn} title="Portfolio">
                 <Link id="about-link" href="/about/portfolio">Portfolio</Link>
             </button>
         </div>
