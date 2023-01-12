@@ -1,6 +1,7 @@
 import aboutExperience from './aboutJSON/aboutExperience.json'
-import Carousel from 'react-bootstrap/Carousel';
-export default function ExperienceCarousel(){
+import Carousel from 'react-bootstrap/Carousel'
+
+const ExperienceCarousel = () => {
     return(
         <Carousel variant="dark">
           {aboutExperience.map(({modalSubtitle, modalDate, modalContent}) => {
@@ -22,3 +23,5 @@ export default function ExperienceCarousel(){
       </Carousel>
     )
 }
+
+export default experienceCarousel

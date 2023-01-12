@@ -1,5 +1,5 @@
 import AboutSkills from './aboutJSON/aboutSkills.json'
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
@@ -7,7 +7,7 @@ const myLoader = ({ src, width, quality, ext }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
-export default function SkillsCarousel(){
+const SkillsCarousel = () => {
     return(
         <Carousel variant="dark">
           {AboutSkills.map(({modalTitle, modalPicture, modalContent}) => {
@@ -35,3 +35,5 @@ export default function SkillsCarousel(){
       </Carousel>
     )
 }
+
+export default skillsCarousel

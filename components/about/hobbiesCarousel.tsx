@@ -1,5 +1,5 @@
 import AboutHobbies from './aboutJSON/aboutHobbies.json'
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
@@ -7,7 +7,7 @@ const myLoader = ({ src, width, quality, ext }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
-export default function HobbiesCarousel(){
+const HobbiesCarousel = () => {
     return(
         <Carousel variant="dark">
           {AboutHobbies.map(({modalTitle, modalPicture, modalContent}) => {
@@ -28,3 +28,5 @@ export default function HobbiesCarousel(){
       </Carousel>
     )
 }
+
+export default hobbiesCarousel
