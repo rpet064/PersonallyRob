@@ -36,4 +36,4 @@ const SkillsCarousel = () => {
     )
 }
 
-export default skillsCarousel
+export default SkillsCarousel

@@ -2,11 +2,11 @@
     {
         "modalSubtitle":"Classroom Teacher - Papatoetoe Intermediate",
         "modalDate": "December 2020 to December 2022",
-        "modalContent": [ "Utilizing Selenium and Python Technologies to automate and manage a wide range of repetitive administrative responsibilities", "Lead planning of team-wide Digital Technology curriculum", "Supporting colleagues and students, with technical queries and problems"]
+        "modalContent": [ "Utilizing Selenium and Python Technologies to automate and manage repetitive administrative responsibilities", "Lead planning of team-wide Digital Technology curriculum", "Supporting colleagues and students, with technical queries and problems"]
     },
     {
         "modalSubtitle":"Front-End Developer - Self-Employed Consultant",
         "modalDate": "November 2022 to Now",
-        "modalContent": [ "Creating front-end UI with React, Bootstrap, HTML and CSS", "Create Severs/API REST endpoints with Java", "Utilize S3 Bucket and EC2 for asset management and deployment", "Meetings and communication with customers to discuss project requirements and progress"]
+        "modalContent": [ "Creating front-end UI with NextJS, Bootstrap, HTML5 and TailwindCSS", "Create Severs/API REST endpoints with Javascript", "Utilize S3 Bucket and EC2 for asset management and deployment", "Meetings and communication with customers to discuss project requirements and progress"]
     }
 ]

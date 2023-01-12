@@ -24,4 +24,4 @@ const ExperienceCarousel = () => {
     )
 }
 
-export default experienceCarousel
+export default ExperienceCarousel

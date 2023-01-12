@@ -24,4 +24,4 @@ const EducationCarousel = () => {
     )
 }
 
-export default educationCarousel
+export default EducationCarousel

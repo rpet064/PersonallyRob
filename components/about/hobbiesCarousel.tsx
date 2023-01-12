@@ -29,4 +29,4 @@ const HobbiesCarousel = () => {
     )
 }
 
-export default hobbiesCarousel
+export default HobbiesCarousel

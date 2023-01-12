@@ -22,7 +22,13 @@ const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
-export default function Me() {
+const Me = () => {
+
+  const getModalStyling = (className: String, classNumber: Number) => {
+
+    // NextJs is unable to change the styling inside the onHover function
+    // Therefore this const handles this dynamically changing CSS  
+  }
 
   // about section hooks render modal
   const [showModal, setShowModal] = useState(false);
@@ -148,3 +154,5 @@ export default function Me() {
       </div>
     )
   }
+
+export default Me

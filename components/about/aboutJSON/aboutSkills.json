@@ -5,6 +5,11 @@
         "modalContent": ["Showing emptathy and supporting teachers and students with difficult tasks", "Led team planning of digital technology curriculum and assemblies"]
     },
     {
+        "modalTitle": "React Frontend Development",
+        "modalPicture": "4.jpg",
+        "modalContent": ["Planning and building user-friendly, modern user-interfaces with React", "Utilizing popular front-end technolgies such as NextJs, Tailwind, Boostrap and React-Native "]
+    },
+    {
         "modalTitle": " Oral & Written Mandarin",
         "modalPicture": "4.jpg",
         "modalContent": ["Comfortable engaging in conversations and managing day-to-day tasks", "Ability to comprehend articles, novels and song lyrics in Mandarin"]
@@ -12,16 +17,16 @@
     {
         "modalTitle": "Problem-Solving",
         "modalPicture": "4.jpg",
-        "modalContent": ["Identifying problems and creating full-stack solutions with Javascript, Java and PHP", "solving puzzles and challenges - using platforms such as Chess, Codewars & CSSBatle"]
+        "modalContent": ["Identifying and solving real world problems with Python, Javascript and PHP", "solving puzzles and challenges - using platforms such as Chess, Codewars & CSSBatle"]
     },
     {
         "modalTitle": "Communication",
         "modalPicture": "4.jpg",
-        "modalContent": ["Praising collegues' and students' positive work and giving constructive feedback when appropiate", "Communicating instructions, advice and suggestions clearly and confidently"]
+        "modalContent": ["Communicating instructions, advice and suggestions clearly and confidently", "Actively listening to collegues, customers and students problems to find effective solutions"]
     },
     {
         "modalTitle": "Collaboration",
         "modalPicture": "4.jpg",
-        "modalContent": ["Sharing and seeking feedback on key responsiblities and tasks", "Co-planning curriculum for Literacy, Mathematics, Social Science and Physcial Education"]
+        "modalContent": ["plan, coordinate and discuss ideas with collegues on key projects", "Praising collegues' and students' positive work and giving constructive feedback when appropiate"]
     }
 ]
