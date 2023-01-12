@@ -48,7 +48,33 @@ option:not(:checked) {
   background-color: #fff;
 }
 
+/* Global Modal Styling */
+
 .carousel-indicators{
   visibility: hidden;
 }
+
+.d-block{
+  height: calc(17.5rem + 7.5vw - 90px);
+  }
+  
+  @media and (max-width: 900px){
+    .modal-dialog{
+      position: relative;
+      top: 40rem;
+    }
+  }
+  
+  .modaltitle{
+    margin-left: 31%;
+    font-size: 2.5rem;
+    }
+    
+    .modal-header{
+      border: none!important;
+    }
+  
+  .carousel-control-next{
+    margin-left: 15%;
+  }
 

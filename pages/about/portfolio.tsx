@@ -41,11 +41,11 @@ export default function Portfolio(){
     }
 
     return(
-        <div className="portfolio" id="portfolio">
+        <div className={styles.portfolio} id="portfolio">
             <Navbar />
             <h1 className={styles.largeheader}>Robert Pether</h1>
             <h1 id="about-header" className={styles.mediumheader}>Portfolio</h1>
-            <div className="carousel-container">
+            <div className={styles.carouselcontainer}>
               <Carousel>
                 {portfolioInfo.map((info, index) => {
                   return (

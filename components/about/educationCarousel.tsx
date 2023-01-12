@@ -4,9 +4,9 @@ import Carousel from 'react-bootstrap/Carousel'
 const EducationCarousel = () => {
     return(
         <Carousel variant="dark">
-          {AboutEducation.map(({modalTitle, modalSubtitle, modalDate, modalContent}, key) => {
+          {AboutEducation.map(({modalTitle, modalSubtitle, modalDate, modalContent}) => {
             return (
-              <Carousel.Item key={index} interval={3000} >
+              <Carousel.Item interval={3000} >
                 <h1>{modalTitle}</h1>
                 <h4>{modalSubtitle}</h4>
                 <h6>{modalDate}</h6>
