@@ -1,9 +1,9 @@
 [
     {
         "modalTitle": "Microsoft Certified: Azure",
-        "modalSubtitle":"SC900, AZ900, DB900, AI900",
+        "modalSubtitle":"SC900, AZ900, DB900, AI900, MS900",
         "modalDate": "November 2022 to Now",
-        "modalContent": ["Knowledge of fundamentals of security, compliance and Identity across Azure", "Demonstrated understanding of core data concepts and related Azure data services", "Proven knowledge of cloud concepts, Azure services, workloads and architecture"]
+        "modalContent": ["Knowledge of fundamentals of security, compliance and Identity across Azure", "Demonstrated understanding of core data concepts and related Azure data services", "Proven knowledge of cloud concepts, Azure services, workloads and architecture", "Understand link between Microsoft365 products common organizational IT challenges."]
     },
     {
         "modalTitle": "Programming Bootcamps",

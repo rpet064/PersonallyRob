@@ -1,7 +1,5 @@
 import aboutExperience from './aboutJSON/aboutExperience.json'
 import Carousel from 'react-bootstrap/Carousel';
-import styles from '../../styles/Home.module.css'
-
 export default function ExperienceCarousel(){
     return(
         <Carousel variant="dark">
@@ -17,7 +15,7 @@ export default function ExperienceCarousel(){
                     <li key={index}>
                       {item}
                     </li>
-                  ))}å
+                  ))}
                 </ul>
               </Carousel.Item>
         )})}

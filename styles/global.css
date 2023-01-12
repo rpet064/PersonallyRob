@@ -22,29 +22,33 @@
     text-decoration: none;
   }
 
-  button{
-    width: 6rem;
-    height: 3rem;
-    border-radius: 10%;
-    background-color: white;
-    margin-bottom: 1%;
-    font-size: 1.1rem;
-    border: 1.5px solid grey;
-    cursor: pointer;
-  }
+button{
+  width: 6rem;
+  height: 3rem;
+  border-radius: 10%;
+  background-color: white;
+  margin-bottom: 1%;
+  font-size: 1.1rem;
+  border: 1.5px solid grey;
+  cursor: pointer;
+}
 
-  svg{
-    font-size:1.3rem;
-    color: black; 
-    padding: 3.5% 3% 2% 3%;
-  }
+svg{
+  font-size:1.3rem;
+  color: black; 
+  padding: 3.5% 3% 2% 3%;
+}
   
-  svg:hover, .logo:hover, button:hover, select:hover, #about-link:hover, .chinese-now:hover{
-    color: #a2d9fd;
-    cursor: pointer;
-  }
+svg:hover, .logo:hover, button:hover, select:hover, #about-link:hover, .chinese-now:hover{
+  color: #a2d9fd;
+  cursor: pointer;
+}
 
-  option:not(:checked) {
-    background-color: #fff;
-    }
+option:not(:checked) {
+  background-color: #fff;
+}
+
+.carousel-indicators{
+  visibility: hidden;
+}
 

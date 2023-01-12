@@ -68,15 +68,11 @@ export default function Me() {
           <Navbar />
             <h1 className={styles.largeheader}>Robert Pether</h1>
             <h1 id="about-header" className={styles.mediumheader}>About</h1>
-            {/* <div className="image-label-container">
-              <div>
-                <p className="image-label-left">Education</p>
-                <div>
-              </div>
-                <p className="image-label-right">Previous Experience</p>
-              </div>
-            </div> */}
-              <div className="image-container">
+            <div className={styles.imagelabelcontainertop}>
+                <p className={styles.imagelabellefttop}>Education</p>
+                <p className={styles.imagelabelrighttop}>Experience</p>
+            </div>
+              <div className={styles.imagecontainer}>
                 <div className={styles.row1}>
                     <Image
                       className={elementClass0}
@@ -125,9 +121,10 @@ export default function Me() {
                         height={125}
                         />
                   </div>
-              {/* <div className="image-label-container">
-                <p className="image-label-left">Skills</p><p className="image-label-right">Hobbies & Interests</p>
-              </div> */}
+                  <div className={styles.imagelabelcontainerbottom}>
+                <p className={styles.imagelabelleftbottom}>Skills</p>
+                <p className={styles.imagelabelrightbottom}>Obsessions</p>
+              </div>
               <Modal id="about-modal" show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                 </Modal.Header>

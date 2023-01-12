@@ -179,18 +179,35 @@ border-radius: 5%;
 
 /* about me page styling */
 
-.imagelabelcontainer{
-width: 40%;
-margin: auto;
-display: block;
+
+.imagelabelcontainertop{
+  padding-bottom: 1%;
+  font-weight: bold;
 }
 
-.imagelabelleft{
-float: left;
+.imagelabellefttop{
+  display: inline-block;
+  padding-right: 4%;
 }
 
-.imagelabelright{
-float: right;
+.imagelabelrighttop{
+  display: inline-block;
+  padding-left: 4%;
+}
+
+.imagelabelcontainerbottom{
+  padding-top: 2%;
+  font-weight: bold;
+  }
+
+.imagelabelleftbottom{
+  display: inline-block;
+  padding-right: 10%;
+}
+
+.imagelabelrightbottom{
+  display: inline-block;
+  padding-left: 7%;
 }
 
 .imagediv{
