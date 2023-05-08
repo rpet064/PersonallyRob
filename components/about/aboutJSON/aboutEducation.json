@@ -2,8 +2,20 @@
     {
         "modalTitle": "Microsoft Certified: Azure",
         "modalSubtitle":"SC900, AZ900, DB900, AI900, MS900",
-        "modalDate": "November 2022 to Now",
-        "modalContent": ["Knowledge of fundamentals of security, compliance and Identity across Azure", "Demonstrated understanding of core data concepts and related Azure data services", "Proven knowledge of cloud concepts, Azure services, workloads and architecture", "Understand link between Microsoft365 products common organizational IT challenges."]
+        "modalDate": "May 2022 to Now",
+        "modalContent": ["Knowledge of fundamentals of security, compliance and Identity across Azure", "Demonstrated understanding of core data concepts and related Azure data services", "Proven knowledge of cloud concepts, Azure services, workloads and architecture", "Understand link between Microsoft365 products and common organizational IT challenges."]
+    },
+    {
+        "modalTitle": "Post Graduate Certificate in IT",
+        "modalSubtitle":"University of Auckland",
+        "modalDate": "January 2023 to Now",
+        "modalContent": ["Client-side, sever-side, database, web-application and mobile development design and technologies", "Developing software using OOP language features, and contemporary APIs, frameworks and tools.", "Developing Dynamic Web-based applications involving relational databases.", "Developing software using OOP language features, and contemporary APIs, frameworks and tools."]
+    },
+    {
+        "modalTitle": "Cisco Certified Network Associate",
+        "modalSubtitle":"CCNA 201 - 300",
+        "modalDate": "March 2023 to May 2023",
+        "modalContent": ["Core Networking fundamentals, including connectivity, LAN, WAN and troubleshooting", "Practical knowledge of TCP/IP/OSI Networking model and related protocols", "Ability to build effective, secure modern and networks for a wide range of organisations", "Understand the relationship of routers, switches, moderms, servers and hosts communicating on a network"]
     },
     {
         "modalTitle": "Programming Bootcamps",

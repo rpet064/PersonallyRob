@@ -22,12 +22,10 @@ const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
 }
 
+// NextJs is unable to change the styling inside the onHover function
+// Therefore this const handles this dynamically changing CSS  
 const Me = () => {
-
   const getModalStyling = (className: String, classNumber: Number) => {
-
-    // NextJs is unable to change the styling inside the onHover function
-    // Therefore this const handles this dynamically changing CSS  
   }
 
   // about section hooks render modal
@@ -75,8 +73,8 @@ const Me = () => {
             <h1 className={styles.largeheader}>Robert Pether</h1>
             <h1 id="about-header" className={styles.mediumheader}>About</h1>
             <div className={styles.imagelabelcontainertop}>
-                <p className={styles.imagelabellefttop}>Education</p>
-                <p className={styles.imagelabelrighttop}>Experience</p>
+                <p className={styles.imagelabellefttop}>Experience</p>
+                <p className={styles.imagelabelrighttop}>Education</p>
             </div>
               <div className={styles.imagecontainer}>
                 <div className={styles.row1}>
@@ -131,7 +129,7 @@ const Me = () => {
                 <p className={styles.imagelabelleftbottom}>Skills</p>
                 <p className={styles.imagelabelrightbottom}>Obsessions</p>
               </div>
-              <Modal id="about-modal" show={showModal} onHide={() => setShowModal(false)}>
+              <Modal size="xl" id="about-modal" show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
@@ -156,3 +154,5 @@ const Me = () => {
   }
 
 export default Me
+
+// https://www.credly.com/users/robert-pether/badges

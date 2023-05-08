@@ -22,7 +22,7 @@ export default function Contact() {
     return (
     <div>
         <div>
-            <h1 title="About" className={styles.mediumheader}>Junior React Developer</h1>
+            <h1 title="About" className={styles.mediumheader}>Cybersecurity and Programming</h1>
             <button title="About">
                 <Link id="about-link" href="/about/me#about">About</Link>
             </button>

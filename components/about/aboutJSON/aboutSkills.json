@@ -1,32 +1,32 @@
 [
     {
-        "modalTitle": "Leadership",
-        "modalPicture": "13.jpg",
-        "modalContent": ["Showing emptathy and supporting teachers and students with difficult tasks", "Led team planning of digital technology curriculum and assemblies"]
-    },
-    {
-        "modalTitle": "React Frontend Development",
-        "modalPicture": "14.jpg",
-        "modalContent": ["Planning and building user-friendly, modern user-interfaces with React", "Utilizing popular front-end technolgies such as NextJs, Tailwind, Boostrap and React-Native "]
-    },
-    {
-        "modalTitle": " Oral & Written Mandarin",
-        "modalPicture": "15.jpg",
-        "modalContent": ["Comfortable engaging in conversations and managing day-to-day tasks", "Ability to comprehend articles, novels and song lyrics in Mandarin"]
-    },
-    {
-        "modalTitle": "Problem-Solving",
-        "modalPicture": "16.jpg",
-        "modalContent": ["Identifying and solving real world problems with Python, Javascript and PHP", "solving puzzles and challenges - using platforms such as Chess, Codewars & CSSBatle"]
-    },
-    {
         "modalTitle": "Communication",
-        "modalPicture": "17.jpg",
-        "modalContent": ["Communicating instructions, advice and suggestions clearly and confidently", "Actively listening to collegues, customers and students problems to find effective solutions"]
+        "modalPicture": "13.jpg",
+        "modalContent": ["Confident communicator, able to clearly articulate ideas and information with colleagues and clients during meetings, projects and discussions."]
     },
     {
-        "modalTitle": "Collaboration",
-        "modalPicture": "18.jpg",
-        "modalContent": ["plan, coordinate and discuss ideas with collegues on key projects", "Praising collegues' and students' positive work and giving constructive feedback when appropiate"]
+        "modalTitle": "Front-End Development",
+        "modalPicture": "14.jpg",
+        "modalContent": ["Adapt at designing and building eye-catching, user- friendly UI with ReactJs, Bootstrap, Tailwind, NextJS, Adobe Photoshop and React Native."]
+    },
+    {
+        "modalTitle": "Cyber Security",
+        "modalPicture": "15.jpg",
+        "modalContent": ["Practical Cybersecurity skills and knowledge of fundamentals including encryption, Cybersecurity layering, vulnerability management, CIA, authentication, and authorization."]
+    },
+    {
+        "modalTitle": "Problem Solving",
+        "modalPicture": "16.jpg",
+        "modalContent": ["Creative thinker, able to apply logic and ideas to solve real world problems. I excel and enjoy activities such as video games, board games (chess) and Codwars."]
+    },
+    {
+        "modalTitle": "Project Management",
+        "modalPicture": "17.jpg",
+        "modalContent": ["Able to effectively prioritse and manage time to meet deadlines"]
+    },
+    {
+        "modalTitle": "Computer Networking",
+        "modalPicture": "17.jpg",
+        "modalContent": ["Excellent knowledge of core networking concepts, network management and troubleshooting."]
     }
 ]
