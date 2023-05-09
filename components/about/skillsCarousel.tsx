@@ -22,14 +22,14 @@ const SkillsCarousel = () => {
                   width={175}
                   height={125}
                   />
-                <ul>
+                <div>
                   {modalContent.map((item, index) => 
                   (
-                    <li key={index}>
+                    <p key={index}>
                       {item}
-                    </li>
+                    </p>
                   ))}
-                </ul>
+                </div>
               </Carousel.Item>
         )})}
       </Carousel>

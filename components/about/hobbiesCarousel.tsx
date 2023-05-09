@@ -19,8 +19,8 @@ const HobbiesCarousel = () => {
                   loader={myLoader}
                   src={modalPicture}
                   alt="Hobby picture was here"
-                  width={175}
-                  height={125}
+                  width={250}
+                  height={200}
                   />
                 <p>{modalContent}</p>
               </Carousel.Item>

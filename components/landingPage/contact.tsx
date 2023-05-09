@@ -22,7 +22,8 @@ export default function Contact() {
     return (
     <div>
         <div>
-            <h1 title="About" className={styles.mediumheader}>Cybersecurity and Programming</h1>
+            <h1 title="About" className={styles.mediumheader}>Full-Stack React Developer</h1>
+            <h1 title="About" className={styles.mediumheader}>Junior Cybersecurity Analyst</h1>
             <button title="About">
                 <Link id="about-link" href="/about/me#about">About</Link>
             </button>

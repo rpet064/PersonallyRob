@@ -24,7 +24,7 @@ const Footer = dynamic(() => import("../../components/landingPage/footer"), {
 })
 
 const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
+  return `https://personallyrobphotobucket.s3.amazonaws.com/projects/${src}`
 }
 
 const Portfolio = () => {

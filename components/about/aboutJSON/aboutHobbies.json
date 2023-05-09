@@ -1,27 +1,27 @@
 [
     {
-        "modalTitle": "Languages",
-        "modalPicture": "19.jpg",
-        "modalContent": "I enjoy using Mandarin to sing karaoke terribly, watch movies, videos and read the occassional book"
+        "modalTitle": "Outdoors Sports",
+        "modalPicture": "me/hobbies/1.jpeg",
+        "modalContent": "Active, Always seeking adventure hiking, snorkelling, rock climbing and kayaking"
     },
     {
-        "modalTitle": "Body-Building",
-        "modalPicture": "20.jpg",
-        "modalContent": "I'm always at my local gym doing muscle building and strength based trainings"
+        "modalTitle": "Languages",
+        "modalPicture": "me/hobbies/2.jpeg",
+        "modalContent": "Fluent Mandarin Speaker, enjoys singing terrible karaoke, reading books and ordering bubble tea (in Mandarin). "
     },
     {
         "modalTitle": "Sports",
-        "modalPicture": "21.jpg",
-        "modalContent": "Lifetime Warriors Fan, occassionally tuning into the latest football, cricket and basketball games too"
+        "modalPicture": "me/hobbies/3.JPG",
+        "modalContent": "Lifetime Warriors Fan, occassionally watching cricket, rugby and basketball."
     },
     {
         "modalTitle": "Games and Board Games",
-        "modalPicture": "22.jpg",
-        "modalContent": "Currently playing Catan and Small World. Haven't gamed recently with my 10 year old Macbook"
-    },
-    {
+        "modalPicture": "me/hobbies/4.jpg",
+        "modalContent": "Uber competitive playing board games such as Cantan, Chess, Small World and Card Games"
+    },  
+    {   
         "modalTitle": "Travel and Culture",
-        "modalPicture": "23.jpg",
-        "modalContent": "Extensively travelled all over Asia, including living in Taiwan and Japan."
+        "modalPicture": "me/hobbies/5.jpeg",
+        "modalContent": "Travelled extensively all over Asia, lived in Taiwan and Japan for 4 years."
     }
 ]

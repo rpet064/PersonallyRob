@@ -1,32 +1,32 @@
 [
     {
         "modalTitle": "Communication",
-        "modalPicture": "13.jpg",
+        "modalPicture": "/me/skills/1.jpg",
         "modalContent": ["Confident communicator, able to clearly articulate ideas and information with colleagues and clients during meetings, projects and discussions."]
     },
     {
         "modalTitle": "Front-End Development",
-        "modalPicture": "14.jpg",
+        "modalPicture": "/me/skills/2.jpg",
         "modalContent": ["Adapt at designing and building eye-catching, user- friendly UI with ReactJs, Bootstrap, Tailwind, NextJS, Adobe Photoshop and React Native."]
     },
     {
         "modalTitle": "Cyber Security",
-        "modalPicture": "15.jpg",
+        "modalPicture": "/me/skills/3.jpg",
         "modalContent": ["Practical Cybersecurity skills and knowledge of fundamentals including encryption, Cybersecurity layering, vulnerability management, CIA, authentication, and authorization."]
     },
     {
         "modalTitle": "Problem Solving",
-        "modalPicture": "16.jpg",
+        "modalPicture": "/me/skills/4.jpg",
         "modalContent": ["Creative thinker, able to apply logic and ideas to solve real world problems. I excel and enjoy activities such as video games, board games (chess) and Codwars."]
     },
     {
         "modalTitle": "Project Management",
-        "modalPicture": "17.jpg",
+        "modalPicture": "/me/skills/5.jpg",
         "modalContent": ["Able to effectively prioritse and manage time to meet deadlines"]
     },
     {
         "modalTitle": "Computer Networking",
-        "modalPicture": "17.jpg",
+        "modalPicture": "/me/skills/6.jpg",
         "modalContent": ["Excellent knowledge of core networking concepts, network management and troubleshooting."]
     }
 ]

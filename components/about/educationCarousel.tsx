@@ -10,14 +10,14 @@ const EducationCarousel = () => {
                 <h1>{modalTitle}</h1>
                 <h4>{modalSubtitle}</h4>
                 <h6>{modalDate}</h6>
-                <ul>
+                <div>
                   {modalContent.map((item, index) => 
                   (
                     <li key={index}>
                       {item}
                     </li>
                   ))}
-                </ul>
+                </div>
               </Carousel.Item>
         )})}
       </Carousel>

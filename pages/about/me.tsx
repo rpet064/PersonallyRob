@@ -19,7 +19,7 @@ const Footer = dynamic(() => import("../../components/landingPage/footer"), {
 })
 
 const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
+  return `https://personallyrobphotobucket.s3.amazonaws.com/me/${src}`
 }
 
 // NextJs is unable to change the styling inside the onHover function
@@ -71,7 +71,7 @@ const Me = () => {
       <div id="about">
           <Navbar />
             <h1 className={styles.largeheader}>Robert Pether</h1>
-            <h1 id="about-header" className={styles.mediumheader}>About</h1>
+            <h1 id="about-header" className={styles.mediumheader}>Background</h1>
             <div className={styles.imagelabelcontainertop}>
                 <p className={styles.imagelabellefttop}>Experience</p>
                 <p className={styles.imagelabelrighttop}>Education</p>
