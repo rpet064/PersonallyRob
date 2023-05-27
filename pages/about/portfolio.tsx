@@ -1,10 +1,8 @@
 import Link from "next/link"
 import dynamic from "next/dynamic"
-import {useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import portfolioInfo from "./portfolioInfo.json"
-import Button from "react-bootstrap/Button"
-import Modal from "react-bootstrap/Modal"
 import Carousel from "react-bootstrap/Carousel"
 import styles from '../../styles/Home.module.css'
 
@@ -22,14 +20,14 @@ const myLoader = ({ src }) => {
 
 const Portfolio = () => {
 
-  const [showModal, setShowModal] = useState(false)
+  const [showProfessionalProjects, setShowProfessionalProjects] = useState(false)
   const [showPersonalProjects, setShowPersonalProjects] = useState(true)
 
-  const handleCollapsibleSections = (sectionType) => {
-    if (sectionType == "professional"){
-      showModal? setShowModal(false): setShowModal(true)
-    } else if (sectionType == "personal"){
-      showPersonalProjects? setShowPersonalProjects(false): setShowPersonalProjects(true)
+  const handleCollapsibleSections = (sectionType) => {  
+    if (sectionType == "professional") {
+      showProfessionalProjects ? setShowProfessionalProjects(false) : setShowProfessionalProjects(false)
+    } else if (sectionType == "personal") {
+      showPersonalProjects ? setShowPersonalProjects(false) : setShowPersonalProjects(true)
     }
   }
 
@@ -37,28 +35,48 @@ const Portfolio = () => {
     <div className={styles.portfolio} id="portfolio">
       <Navbar />
       <h1 className={styles.largeheader}>Portfolio</h1>
-      
-      <h1 id="about-header" className={styles.mediumheader} 
-      onClick={() => handleCollapsibleSections("professional")}>Professional Projects
+
+      <h1 className={styles.mediumheaderportfolio}
+        onClick={() => handleCollapsibleSections("professional")}>Professional Projects
       </h1>
 
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-        </Modal.Header>
-            <Modal.Body>
-            <h2>Coming Soon</h2>
-            </Modal.Body>
-            <Modal.Footer>
-            <Button variant="secondary" onClick={() => setShowModal(false)}>
-                Close
-            </Button>
-            </Modal.Footer>
-        </Modal>
+      {showProfessionalProjects && (<div>
+        <div>
+          <Image
+            loader={myLoader}
+            src="10.png"
+            alt="Oops! a picture of a project is missing"
+            width={150}
+            height={200}
+          />
+        </div>
+        <div>
+          <Image
+            loader={myLoader}
+            src="11.png"
+            alt="Oops! a picture of a project is missing"
+            width={150}
+            height={200}
+          />
+        </div>
+        <div>
+          <Image
+            loader={myLoader}
+            src="12.png"
+            alt="Oops! a picture of a project is missing"
+            width={150}
+            height={200}
+          />
+        </div>
+      </div>
       
-      <h1 id="about-header" className={styles.mediumheader}
-      onClick={() => handleCollapsibleSections("personal")}>Personal Projects
+      
+      )}
+
+      <h1 className={styles.mediumheaderportfolio}
+        onClick={() => handleCollapsibleSections("personal")}>Personal Projects
       </h1>
-      
+
       {showPersonalProjects && (<div className={styles.carouselcontainer}>
         <Carousel>
           {portfolioInfo.map((info, index) => {

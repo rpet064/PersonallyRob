@@ -1,39 +1,26 @@
 [
     {
-        "fileName": "5.png",
-        "projectName": "Terrsau",
-        "technology": "JQuery, PHP, MySQL, AWS EC2, AWS S3 Bucket",
-        "description": "Preparing for a General Knowledge Quiz? Struggling with Pub Quiz Nights? This is the app for you"
+        "fileName": "1.png"
     },
     {
-        "fileName": "6.png",
-        "projectName": "Moodit",
-        "technology": "React/Javascript, .NET/MySQL, Azure Logic Apps & Azure SQL DB",
-        "description": "Well-Being and Mindfullness is becoming more and more important than ever before - Track your mental well-being with Moodit"
+        "fileName": "2.png"
     },
     {
-        "fileName": "7.png",
-        "projectName": "Tindog",
-        "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Website advertising the next popular app - Tindog, tinder for dogs"
+        "fileName": "3.png"
     },
     {
-        "fileName": "8.png",
-        "projectName": "Memories",
-        "technology": "React, NodeJS, Express Backend, MongoDB Database & AWS S3 Photo Storage",
-        "description": "Your next anniversary/birthday/Christmas present for someone special - Contains photos displayed on landing page & Note-taking app"
+        "fileName": "4.png"
     },
     {
-        "fileName": "9.png",
-        "projectName": "Mike Lee",
-        "technology": "HTML, CSS, Bootstrap",
-        "description": "Personally customized website for the one and only Mike Lee"
+        "fileName": "5.png"
     },
     {
-        "fileName": "10.png",
-        "projectName": "PSRDB",
-        "technology": "React, NodeJS, Expess, MongoDB, AWS S3 Bucket",
-        "description": "Two teams of robots recruited from across the globe to face off in a once of a life-time dance battle"
+        "fileName": "6.png"
+    },
+    {
+        "fileName": "7.png"
+    },
+    {
+        "fileName": "8.png"
     }
-    
 ]

@@ -22,12 +22,8 @@ const myLoader = ({ src }) => {
   return `https://personallyrobphotobucket.s3.amazonaws.com/me/${src}`
 }
 
-// NextJs is unable to change the styling inside the onHover function
-// Therefore this const handles this dynamically changing CSS  
-const Me = () => {
-  const getModalStyling = (className: String, classNumber: Number) => {
-  }
 
+const Me = () => {
   // about section hooks render modal
   const [showModal, setShowModal] = useState(false);
 
@@ -36,12 +32,6 @@ const Me = () => {
   const [educationCarousel, setEducationCarousel] = useState(false);
   const [skillsCarousel, setSkillsCarousel] = useState(false);
   const [hobbiesCarousel, setHobbiesCarousel] = useState(false);
-
-  // dynamically change styling on mouseover
-  const [elementClass0, setElementClass0] = useState("image-div");
-  const [elementClass1, setElementClass1] = useState("image-div");
-  const [elementClass2, setElementClass2] = useState("image-div");
-  const [elementClass3, setElementClass3] = useState("image-div");
 
   function resetModals(){
     setExperienceCarousel(false);
@@ -79,9 +69,7 @@ const Me = () => {
               <div className={styles.imagecontainer}>
                 <div className={styles.row1}>
                     <Image
-                      className={elementClass0}
-                      onMouseEnter={() => setElementClass0("focusimagediv")}
-                      onMouseLeave={() => setElementClass0("imagediv")} 
+                      className={styles.aboutmeimage}
                       onClick={() => handleModalRender("experience")} 
                       loader={myLoader}
                       src="4.jpg"
@@ -90,9 +78,7 @@ const Me = () => {
                       height={125}
                       />
                       <Image
-                      className={elementClass1}
-                      onMouseEnter={() => setElementClass1("focusimagediv")} 
-                      onMouseLeave={() => setElementClass1("imagediv")} 
+                      className={styles.aboutmeimage}
                       onClick={() => handleModalRender("education")} 
                       loader={myLoader}
                       src="1.jpg"
@@ -103,9 +89,7 @@ const Me = () => {
                   </div>
                   <div className={styles.row2}>
                         <Image
-                        className={elementClass2}
-                        onMouseEnter={() => setElementClass2("focus-image-div")} 
-                        onMouseLeave={() => setElementClass2("image-div")} 
+                        className={styles.aboutmeimage}
                         onClick={() => handleModalRender("skills")} 
                         loader={myLoader}
                         src="3.jpg"
@@ -114,9 +98,7 @@ const Me = () => {
                         height={125}
                       />
                       <Image
-                        className={elementClass3}
-                        onMouseEnter={() => setElementClass3("focus-image-div")} 
-                        onMouseLeave={() => setElementClass3("image-div")} 
+                        className={styles.aboutmeimage}
                         onClick={() => handleModalRender("hobbies")} 
                         loader={myLoader}
                         src="2.jpg"
@@ -154,5 +136,3 @@ const Me = () => {
   }
 
 export default Me
-
-// https://www.credly.com/users/robert-pether/badges

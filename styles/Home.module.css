@@ -37,8 +37,10 @@
   margin: 0.1% 1.5% 1.5% 1.5%;
 }
 
-#portfolio-header {
-  padding-top: 1.5%;
+.mediumheaderportfolio {
+  font-size: 2rem;
+  margin: 0.1% 1.5% 1.5% 1.5%;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -125,10 +127,6 @@
 }
 
 /* Modal styling */
-
-.focusimagediv {
-  border: 2px solid #a2d9fd;
-}
 
 .modaldialog {
   margin-top: 10% !important;
@@ -220,18 +218,8 @@
   }
 }
 
-@media only screen and (min-width: 1150px) {
-  .focusimagediv {
-    width: 33%;
-    height: 59%;
-    z-index: 9;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10%;
-    border: 0px solid black;
-  }
+.aboutmeimage{
+  cursor: pointer;
 }
 
 /* about modal styling */
@@ -253,6 +241,7 @@
   margin: auto;
   height: calc(19rem + 7.5vw - 90px);
   padding-bottom: 2%;
+  cursor: pointer;
 }
 
 .mebtncontainer {
@@ -265,97 +254,3 @@
   }
 }
 
-/* ChineseNow Styling */
-
-.chinesenow {
-  font-size: 1.3rem;
-  padding: 3.5% 1% 2% 1.5%;
-  cursor: pointer;
-  position: relative;
-  bottom: 0.33rem;
-  font-weight: bold;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-  width: 100%;
-  padding: 0%;
-}
-
-.main section {
-  min-width: 100%;
-  padding-bottom: 3%;
-  cursor: pointer;
-}
-
-.navbar {
-  max-height: 3rem;
-  padding: 0.75% 0% 1% 1.75%;
-}
-
-.navbar .logo {
-  float: left;
-  font-size: 1.375rem;
-  color: #DC3535;
-}
-
-.navbar .iconcontainer {
-  float: right;
-  padding: 0.6% 2.5% 0% 0%;
-}
-
-.navbar .iconcontainer button {
-  width: 2.75rem;
-  height: 3rem;
-  border: none;
-  background-color: #F1F6F5;
-}
-
-.navbar .iconcontainer svg {
-  font-size: 1.5rem;
-  color: #DC3535;
-}
-
-.maincontent {
-  padding: 2%;
-}
-
-.maincontent .collapsible .playerwrapper {
-  position: relative;
-  padding: 2%;
-}
-
-.sectiontwo {
-  background-color: #fef5d5;
-}
-
-.sectionthree {
-  background-color: #feefbc;
-}
-
-.sectionfour {
-  background-color: red !important;
-}
-
-.cta {
-  padding: 1.25%;
-  border: black solid 1px;
-  background-color: #fbd758;
-}
-
-.cta h1 {
-  padding: 0.5%
-}
-
-.cta button {
-  background-color: #DC3535;
-  color: antiquewhite;
-  border: grey solid 0.5px;
-  width: 7.25rem;
-  height: 3.75rem;
-}
