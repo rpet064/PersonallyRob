@@ -244,6 +244,38 @@
   cursor: pointer;
 }
 
+.professionalProjectsContainer{
+  margin: auto;
+  width: 97.5%;
+  position: center;
+
+}
+
+.professionalProjectsContainer > div:nth-child(odd){
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.professionalProjectsContainer > div:nth-child(even){
+  display: flex;
+  flex: 1;  
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.professionalProjectsContainer > div > div:nth-child(even){
+  width: 47.5%;
+  padding: 5%;
+}
+
+.professionalProjectsContainer > div > div:nth-child(odd){
+  width: 47.5%;
+  padding: 5%;
+
+}
+
 .mebtncontainer {
   margin-top: 3%;
 }

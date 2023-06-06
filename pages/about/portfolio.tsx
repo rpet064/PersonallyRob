@@ -20,12 +20,12 @@ const myLoader = ({ src }) => {
 
 const Portfolio = () => {
 
-  const [showProfessionalProjects, setShowProfessionalProjects] = useState(false)
+  const [showProfessionalProjects, setShowProfessionalProjects] = useState(true)
   const [showPersonalProjects, setShowPersonalProjects] = useState(true)
 
   const handleCollapsibleSections = (sectionType) => {  
     if (sectionType == "professional") {
-      showProfessionalProjects ? setShowProfessionalProjects(false) : setShowProfessionalProjects(false)
+      showProfessionalProjects ? setShowProfessionalProjects(false) : setShowProfessionalProjects(true)
     } else if (sectionType == "personal") {
       showPersonalProjects ? setShowPersonalProjects(false) : setShowPersonalProjects(true)
     }
@@ -40,33 +40,64 @@ const Portfolio = () => {
         onClick={() => handleCollapsibleSections("professional")}>Professional Projects
       </h1>
 
-      {showProfessionalProjects && (<div>
+      {showProfessionalProjects && (
+      <div className={styles.professionalProjectsContainer}>
         <div>
-          <Image
-            loader={myLoader}
-            src="10.png"
-            alt="Oops! a picture of a project is missing"
-            width={150}
-            height={200}
-          />
+          <div className={styles.professionalProjectsContainerItems}>
+            <Image
+              className={styles.professionalProjectsImgLeft}
+              loader={myLoader}
+              src="10.png"
+              alt="Oops! a picture of a project is missing"
+              width={550}
+              height={400}
+            />
         </div>
         <div>
+            <h1>Jiapo</h1>
+            <h2>Jiapo. Taiwanese, Pork Rice</h2>
+            <h4>Website for the best Hakka pork on rice in Taoyuan</h4>
+            <p>Created using Tailwind, HTML5, JQuery, Github Pages</p>
+            <p>Features include hero landing page, stylish and convenient navigation bar and user-friendly design</p>
+        </div>
+        </div>
+        <div>
+        <div>
+            <h1>Jiapo</h1>
+            <h2>Jiapo. Taiwanese, Pork Rice</h2>
+            <h4>Website for the best Hakka pork on rice in Taoyuan</h4>
+            <p>Created using Tailwind, HTML5, JQuery, Github Pages</p>
+            <p>Features include hero landing page, stylish and convenient navigation bar and user-friendly design</p>
+        </div>
+        <div className={styles.professionalProjectsContainerItems}>
           <Image
+            className={styles.professionalProjectsImgRight}
             loader={myLoader}
             src="11.png"
             alt="Oops! a picture of a project is missing"
-            width={150}
-            height={200}
+            width={450}
+            height={400}
+          />
+        </div>
+        </div>
+        <div>
+        <div>
+          <Image
+              className={styles.professionalProjectsImgLeft}
+              loader={myLoader}
+            src="12.png"
+            alt="Oops! a picture of a project is missing"
+            width={500}
+            height={400}
           />
         </div>
         <div>
-          <Image
-            loader={myLoader}
-            src="12.png"
-            alt="Oops! a picture of a project is missing"
-            width={150}
-            height={200}
-          />
+            <h1>Jiapo</h1>
+            <h2>Jiapo. Taiwanese, Pork Rice</h2>
+            <h4>Website for the best Hakka pork on rice in Taoyuan</h4>
+            <p>Created using Tailwind, HTML5, JQuery, Github Pages</p>
+            <p>Features include hero landing page, stylish and convenient navigation bar and user-friendly design</p>
+        </div>
         </div>
       </div>
       
