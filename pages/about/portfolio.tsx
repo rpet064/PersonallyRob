@@ -6,11 +6,11 @@ import portfolioInfo from "./portfolioInfo.json"
 import Carousel from "react-bootstrap/Carousel"
 import styles from '../../styles/Home.module.css'
 
-const Navbar = dynamic(() => import("../../components/landingPage/navbar"), {
+const Navbar = dynamic(() => import("../../components/landingPageComponents/navbar"), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import("../../components/landingPage/footer"), {
+const Footer = dynamic(() => import("../../components/landingPageComponents/footer"), {
   suspense: true,
 })
 

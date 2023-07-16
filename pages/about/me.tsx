@@ -10,11 +10,11 @@ import HobbiesCarousel from "../../components/about/hobbiesCarousel"
 import EducationCarousel from "../../components/about/educationCarousel"
 import styles from '../../styles/Home.module.css'
 
-const Navbar = dynamic(() => import("../../components/landingPage/navbar"), {
+const Navbar = dynamic(() => import("../../components/landingPageComponents/navbar"), {
   suspense: true,
 })
 
-const Footer = dynamic(() => import("../../components/landingPage/footer"), {
+const Footer = dynamic(() => import("../../components/landingPageComponents/footer"), {
   suspense: true,
 })
 
@@ -33,106 +33,125 @@ const Me = () => {
   const [skillsCarousel, setSkillsCarousel] = useState(false);
   const [hobbiesCarousel, setHobbiesCarousel] = useState(false);
 
-  function resetModals(){
+  function resetModals() {
     setExperienceCarousel(false);
     setEducationCarousel(false);
     setSkillsCarousel(false);
     setHobbiesCarousel(false);
   }
 
-  function handleModalRender(componentType){
+  function handleModalRender(componentType) {
 
-    // get component from modal clicked on
-    // change useState to render modal
-    // reset modals before trigger useState
+    // When image is clicked on, reset all modals, then, display corresponding modal
     resetModals();
     setShowModal(true);
-    if (componentType === "experience"){
+
+    // Experience Modal
+    if (componentType === "experience") {
       setExperienceCarousel(true);
-    } else if (componentType === "education"){
+
+      // Education Modal
+    } else if (componentType === "education") {
       setEducationCarousel(true);
-    } else if (componentType === "skills"){
+
+      // Skills Modal
+    } else if (componentType === "skills") {
       setSkillsCarousel(true);
-    } else if (componentType === "hobbies"){
+
+      // Hobbies Modal
+    } else if (componentType === "hobbies") {
       setHobbiesCarousel(true);
     }
   }
-    return (
-      <div id="about">
-          <Navbar />
-            <h1 className={styles.largeheader}>Robert Pether</h1>
-            <h1 id="about-header" className={styles.mediumheader}>Background</h1>
-            <div className={styles.imagelabelcontainertop}>
-                <p className={styles.imagelabellefttop}>Experience</p>
-                <p className={styles.imagelabelrighttop}>Education</p>
-            </div>
-              <div className={styles.imagecontainer}>
-                <div className={styles.row1}>
-                    <Image
-                      className={styles.aboutmeimage}
-                      onClick={() => handleModalRender("experience")} 
-                      loader={myLoader}
-                      src="4.jpg"
-                      alt="Picture of the author"
-                      width={175}
-                      height={125}
-                      />
-                      <Image
-                      className={styles.aboutmeimage}
-                      onClick={() => handleModalRender("education")} 
-                      loader={myLoader}
-                      src="1.jpg"
-                      alt="Picture of the author"
-                      width={175}
-                      height={125}
-                      />
-                  </div>
-                  <div className={styles.row2}>
-                        <Image
-                        className={styles.aboutmeimage}
-                        onClick={() => handleModalRender("skills")} 
-                        loader={myLoader}
-                        src="3.jpg"
-                        alt="Picture of the author"
-                        width={175}
-                        height={125}
-                      />
-                      <Image
-                        className={styles.aboutmeimage}
-                        onClick={() => handleModalRender("hobbies")} 
-                        loader={myLoader}
-                        src="2.jpg"
-                        alt="Picture of the author"
-                        width={175}
-                        height={125}
-                        />
-                  </div>
-                  <div className={styles.imagelabelcontainerbottom}>
-                <p className={styles.imagelabelleftbottom}>Skills</p>
-                <p className={styles.imagelabelrightbottom}>Obsessions</p>
-              </div>
-              <Modal size="xl" id="about-modal" show={showModal} onHide={() => setShowModal(false)}>
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  {experienceCarousel && <ExperienceCarousel />}
-                  {educationCarousel && <EducationCarousel />}
-                  {skillsCarousel && <SkillsCarousel />}
-                  {hobbiesCarousel && <HobbiesCarousel />}
-                  <Button variant="secondary" onClick={() => setShowModal(false)}>
-                  Close
-                </Button>
-                </Modal.Body>
-              </Modal>
-          </div>
-          <div className={styles.mebtncontainer}>
-            <button className={styles.portfoliobtn} title="Portfolio">
-                <Link id="about-link" href="/about/portfolio">Portfolio</Link>
-            </button>
-        </div>
-        <Footer />
+  return (
+    <div id="about" className={styles.maincontainer}>
+      <Navbar />
+      <h1 className={styles.largeheader}>Robert Pether</h1>
+      <h1 id="about-header" className={styles.mediumheader}>Background</h1>
+
+      {/* Top Image Labels */}
+      <div className={styles.imagelabelcontainertop}>
+        <p className={styles.imagelabellefttop}>Experience</p>
+        <p className={styles.imagelabelrighttop}>Education</p>
       </div>
-    )
-  }
+
+      {/* Images - Row 1 */}
+      <div className={styles.imagecontainer}>
+        <div className={styles.row1}>
+          <Image
+            className={styles.aboutmeimage}
+            onClick={() => handleModalRender("experience")}
+            loader={myLoader}
+            src="4.jpg"
+            alt="Picture of the author"
+            width={175}
+            height={125}
+          />
+
+          <Image
+            className={styles.aboutmeimage}
+            onClick={() => handleModalRender("education")}
+            loader={myLoader}
+            src="1.jpg"
+            alt="Picture of the author"
+            width={175}
+            height={125}
+          />
+        </div>
+
+        {/* Images - Row 2 */}
+        <div className={styles.row2}>
+          <Image
+            className={styles.aboutmeimage}
+            onClick={() => handleModalRender("skills")}
+            loader={myLoader}
+            src="3.jpg"
+            alt="Picture of the author"
+            width={175}
+            height={125}
+          />
+
+          <Image
+            className={styles.aboutmeimage}
+            onClick={() => handleModalRender("hobbies")}
+            loader={myLoader}
+            src="2.jpg"
+            alt="Picture of the author"
+            width={175}
+            height={125}
+          />
+        </div>
+
+        {/* Bottom  Image Labels */}
+        <div className={styles.imagelabelcontainerbottom}>
+          <p className={styles.imagelabelleftbottom}>Skills</p>
+          <p className={styles.imagelabelrightbottom}>Obsessions</p>
+        </div>
+
+        {/* Modal containing all conditionally rendered carousels  */}
+        <Modal size="xl" id="about-modal" show={showModal} onHide={() => setShowModal(false)}>
+          <Modal.Header closeButton>
+          </Modal.Header>
+          <Modal.Body>
+            {experienceCarousel && <ExperienceCarousel />}
+            {educationCarousel && <EducationCarousel />}
+            {skillsCarousel && <SkillsCarousel />}
+            {hobbiesCarousel && <HobbiesCarousel />}
+            <Button variant="secondary" onClick={() => setShowModal(false)}>
+              Close
+            </Button>
+          </Modal.Body>
+        </Modal>
+      </div>
+
+      <div className={styles.mebtncontainer}>
+        <button className={styles.portfoliobtn} title="Portfolio">
+          <Link id="about-link" href="/about/portfolio">Portfolio</Link>
+        </button>
+      </div>
+      <Footer />
+    </div>
+  )
+}
 
 export default Me

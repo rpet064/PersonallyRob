@@ -1,5 +1,4 @@
 /* Global Styles */
-
 * body {
   padding: 0;
   margin: 0;
@@ -12,7 +11,7 @@
 }
 
 body {
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -59,19 +58,19 @@ option:not(:checked) {
   width: 200rem!important;
 }
 
+@media screen and (max-width: 900px) {
+  .modal-dialog {
+    position: relative;
+    top: 40rem;
+  } 
+}
+
 .carousel-indicators {
   visibility: hidden;
 }
 
 .d-block {
   height: calc(17.5rem + 7.5vw - 90px);
-}
-
-@media screen and (max-width: 900px) {
-  .modal-dialog {
-    position: relative;
-    top: 40rem;
-  }
 }
 
 .modaltitle {
