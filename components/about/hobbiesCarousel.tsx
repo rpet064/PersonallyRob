@@ -1,11 +1,11 @@
-import AboutHobbies from './aboutJSON/aboutHobbies.json'
-import Carousel from 'react-bootstrap/Carousel'
-import Image from 'next/image'
-import styles from '../../styles/Home.module.css'
+import AboutHobbies from './aboutJSON/aboutHobbies.json';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 const myLoader = ({ src, width, quality, ext }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
-}
+  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`;
+};
 
 const HobbiesCarousel = () => {
     return(
@@ -29,4 +29,4 @@ const HobbiesCarousel = () => {
     )
 }
 
-export default HobbiesCarousel
+export default HobbiesCarousel;

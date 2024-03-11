@@ -1,9 +1,9 @@
-import Image from "next/image"
-import styles from '../../styles/Home.module.css'
+import Image from "next/image";
+import styles from '../../styles/Home.module.css';
 
 const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
-}
+  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`;
+};
 
 export default function About() {
     return (

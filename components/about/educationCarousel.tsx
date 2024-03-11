@@ -1,5 +1,5 @@
-import AboutEducation from './aboutJSON/aboutEducation.json'
-import Carousel from 'react-bootstrap/Carousel'
+import AboutEducation from './aboutJSON/aboutEducation.json';
+import Carousel from 'react-bootstrap/Carousel';
 
 const EducationCarousel = () => {
     return(
@@ -24,4 +24,4 @@ const EducationCarousel = () => {
     )
 }
 
-export default EducationCarousel
+export default EducationCarousel;

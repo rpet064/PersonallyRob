@@ -1,5 +1,5 @@
-import aboutExperience from './aboutJSON/aboutExperience.json'
-import Carousel from 'react-bootstrap/Carousel'
+import aboutExperience from './aboutJSON/aboutExperience.json';
+import Carousel from 'react-bootstrap/Carousel';
 
 const ExperienceCarousel = () => {
     return(
@@ -24,4 +24,4 @@ const ExperienceCarousel = () => {
     )
 }
 
-export default ExperienceCarousel
+export default ExperienceCarousel;

@@ -1,13 +1,13 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Home.module.css';
 
 
 const DownloadPDF = dynamic(() => import("./downloadPDF"), {
   suspense: true,
-})
+});
 
-export default function Navbar() {
+const Navbar = () => {
     return (
       <div className={styles.navbar}>
         <div title="Home" className={styles.logo}>
@@ -17,5 +17,7 @@ export default function Navbar() {
           <DownloadPDF />
         </div>
       </div>
-    )
-  }
+    );
+  };
+
+export default Navbar;

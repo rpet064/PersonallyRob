@@ -1,8 +1,7 @@
 import Link from "next/link";
-import styles from '../../styles/Home.module.css'
-import { useState } from "react";
-import "@fortawesome/fontawesome-svg-core/styles.css"
-import { config } from "@fortawesome/fontawesome-svg-core"
+import styles from '../../styles/Home.module.css';
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -10,11 +9,11 @@ import {
   } from "@fortawesome/free-solid-svg-icons";
   import { library } from "@fortawesome/fontawesome-svg-core";
   library.add(faYoutube, faGithub,faLinkedin, faEnvelope);
-config.autoAddCss = false
+config.autoAddCss = false;
 
 const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
-}
+  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`;
+};
 
 export default function Contact() {
     return (

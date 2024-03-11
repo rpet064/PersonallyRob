@@ -1,26 +1,26 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import ExperienceCarousel from "../../components/about/experienceCarousel"
-import SkillsCarousel from "../../components/about/skillsCarousel"
-import HobbiesCarousel from "../../components/about/hobbiesCarousel"
-import EducationCarousel from "../../components/about/educationCarousel"
-import styles from '../../styles/Home.module.css'
+import ExperienceCarousel from "../../components/about/experienceCarousel";
+import SkillsCarousel from "../../components/about/skillsCarousel";
+import HobbiesCarousel from "../../components/about/hobbiesCarousel";
+import EducationCarousel from "../../components/about/educationCarousel";
+import styles from '../../styles/Home.module.css';
 
 const Navbar = dynamic(() => import("../../components/landingPageComponents/navbar"), {
   suspense: true,
-})
+});
 
 const Footer = dynamic(() => import("../../components/landingPageComponents/footer"), {
   suspense: true,
-})
+});
 
 const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/me/${src}`
-}
+  return `https://personallyrobphotobucket.s3.amazonaws.com/me/${src}`;
+};
 
 
 const Me = () => {
@@ -33,14 +33,14 @@ const Me = () => {
   const [skillsCarousel, setSkillsCarousel] = useState(false);
   const [hobbiesCarousel, setHobbiesCarousel] = useState(false);
 
-  function resetModals() {
+  const resetModals = () => {
     setExperienceCarousel(false);
     setEducationCarousel(false);
     setSkillsCarousel(false);
     setHobbiesCarousel(false);
-  }
+  };
 
-  function handleModalRender(componentType) {
+  const handleModalRender = (componentType: string) => {
 
     // When image is clicked on, reset all modals, then, display corresponding modal
     resetModals();
@@ -62,7 +62,7 @@ const Me = () => {
     } else if (componentType === "hobbies") {
       setHobbiesCarousel(true);
     }
-  }
+  };
   return (
     <div id="about" className={styles.maincontainer}>
       <Navbar />
@@ -152,6 +152,6 @@ const Me = () => {
       <Footer />
     </div>
   )
-}
+};
 
-export default Me
+export default Me;

@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Header() {
+const Header = () => {
     return (
     <Head>
         <title>Robert Pether: React Developer Personal Website</title>
@@ -17,5 +17,7 @@ export default function Header() {
         {/* links & APIs */}
         <link rel="icon" href="/favicon.ico" />
     </Head>
-    )
-}
+    );
+};
+
+export default Header;

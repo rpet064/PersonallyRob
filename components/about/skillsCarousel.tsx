@@ -1,11 +1,11 @@
-import AboutSkills from './aboutJSON/aboutSkills.json'
-import Carousel from 'react-bootstrap/Carousel'
-import Image from 'next/image'
-import styles from '../../styles/Home.module.css'
+import AboutSkills from './aboutJSON/aboutSkills.json';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 const myLoader = ({ src, width, quality, ext }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`
-}
+  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`;
+};
 
 const SkillsCarousel = () => {
     return(
@@ -36,4 +36,4 @@ const SkillsCarousel = () => {
     )
 }
 
-export default SkillsCarousel
+export default SkillsCarousel;
