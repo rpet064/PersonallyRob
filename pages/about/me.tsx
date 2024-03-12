@@ -8,7 +8,9 @@ import ExperienceCarousel from "../../components/about/experienceCarousel";
 import SkillsCarousel from "../../components/about/skillsCarousel";
 import HobbiesCarousel from "../../components/about/hobbiesCarousel";
 import EducationCarousel from "../../components/about/educationCarousel";
+import { imageLoader } from "../../utility/imageLoader";
 import styles from '../../styles/Home.module.css';
+import aboutStyles from '../../styles/About.module.css';
 
 const Navbar = dynamic(() => import("../../components/landingPageComponents/navbar"), {
   suspense: true,
@@ -17,11 +19,6 @@ const Navbar = dynamic(() => import("../../components/landingPageComponents/navb
 const Footer = dynamic(() => import("../../components/landingPageComponents/footer"), {
   suspense: true,
 });
-
-const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/me/${src}`;
-};
-
 
 const Me = () => {
   // about section hooks render modal
@@ -64,35 +61,35 @@ const Me = () => {
     }
   };
   return (
-    <div id="about" className={styles.maincontainer}>
+    <div id="about" className={aboutStyles.maincontainer}>
       <Navbar />
       <h1 className={styles.largeheader}>Robert Pether</h1>
       <h1 id="about-header" className={styles.mediumheader}>Background</h1>
 
       {/* Top Image Labels */}
-      <div className={styles.imagelabelcontainertop}>
-        <p className={styles.imagelabellefttop}>Experience</p>
-        <p className={styles.imagelabelrighttop}>Education</p>
+      <div className={aboutStyles.imageLabelContainerTop}>
+        <p className={aboutStyles.imageLabelLeftTop}>Experience</p>
+        <p className={aboutStyles.imageLabelRightTop}>Education</p>
       </div>
 
       {/* Images - Row 1 */}
       <div className={styles.imagecontainer}>
         <div className={styles.row1}>
           <Image
-            className={styles.aboutmeimage}
+            className={aboutStyles.aboutMeImage}
             onClick={() => handleModalRender("experience")}
-            loader={myLoader}
-            src="4.jpg"
+            loader={imageLoader}
+            src="me/4.jpg"
             alt="Picture of the author"
             width={175}
             height={125}
           />
 
           <Image
-            className={styles.aboutmeimage}
+            className={aboutStyles.aboutMeImage}
             onClick={() => handleModalRender("education")}
-            loader={myLoader}
-            src="1.jpg"
+            loader={imageLoader}
+            src="me/1.jpg"
             alt="Picture of the author"
             width={175}
             height={125}
@@ -102,20 +99,20 @@ const Me = () => {
         {/* Images - Row 2 */}
         <div className={styles.row2}>
           <Image
-            className={styles.aboutmeimage}
+            className={aboutStyles.aboutMeImage}
             onClick={() => handleModalRender("skills")}
-            loader={myLoader}
-            src="3.jpg"
+            loader={imageLoader}
+            src="me/3.jpg"
             alt="Picture of the author"
             width={175}
             height={125}
           />
 
           <Image
-            className={styles.aboutmeimage}
+            className={aboutStyles.aboutMeImage}
             onClick={() => handleModalRender("hobbies")}
-            loader={myLoader}
-            src="2.jpg"
+            loader={imageLoader}
+            src="me/2.jpg"
             alt="Picture of the author"
             width={175}
             height={125}
@@ -123,9 +120,9 @@ const Me = () => {
         </div>
 
         {/* Bottom  Image Labels */}
-        <div className={styles.imagelabelcontainerbottom}>
-          <p className={styles.imagelabelleftbottom}>Skills</p>
-          <p className={styles.imagelabelrightbottom}>Obsessions</p>
+        <div className={aboutStyles.imageLabelContainerBottom}>
+          <p className={aboutStyles.imageLabelLeftBottom}>Skills</p>
+          <p className={aboutStyles.imageLabelRightBottom}>Obsessions</p>
         </div>
 
         {/* Modal containing all conditionally rendered carousels  */}

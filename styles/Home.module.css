@@ -175,69 +175,6 @@
   }
 }
 
-/* about me page styling */
-
-
-.imagelabelcontainertop {
-  font-weight: bold;
-}
-
-.imagelabellefttop {
-  display: inline-block;
-  padding-right: 1%;
-}
-
-.imagelabelrighttop {
-  display: inline-block;
-  padding-left: 4.5%;
-}
-
-.imagelabelcontainerbottom {
-  padding-top: 1.75%;
-  font-weight: bold;
-}
-
-.imagelabelleftbottom {
-  display: inline-block;
-  padding-right: 10%;
-  position: relative;
-  left: 22px;
-}
-
-.imagelabelrightbottom {
-  display: inline-block;
-  padding-left: 3%;
-}
-
-.imagediv {
-  position: relative;
-  display: inline-block;
-  width: calc(30rem - 50) !important;
-}
-
-@media only screen and (max-width: 768px) {
-  .imagediv {
-    width: 7.2rem;
-    height: 117.5px;
-  }
-}
-
-.aboutmeimage{
-  cursor: pointer;
-}
-
-/* about modal styling */
-
-
-#about-modal {
-  margin-left: calc(33% + 100vw - 1024);
-  bottom: calc(10vw - 50px);
-}
-
-.skillscarouselimg {
-  margin: 5% 0% 5% 3%;
-}
-
 /* portfolio styling */
 
 .portfolio .carouselcontainer {

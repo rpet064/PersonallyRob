@@ -1,0 +1,62 @@
+#about-modal {
+    margin-left: calc(33% + 100vw - 1024);
+    bottom: calc(10vw - 50px);
+  }
+  
+  .skillsCarouselImg {
+    margin: 5% 0% 5% 3%;
+  }
+
+.imageLabelContainerTop {
+    font-weight: bold;
+  }
+  
+  .imageLabelLeftTop {
+    display: inline-block;
+    padding-right: 1%;
+  }
+  
+  .imageLabelRightTop {
+    display: inline-block;
+    padding-left: 4.5%;
+  }
+  
+  .imageLabelContainerBottom {
+    padding-top: 1.75%;
+    font-weight: bold;
+  }
+  
+  .imageLabelLeftBottom {
+    display: inline-block;
+    padding-right: 10%;
+    position: relative;
+    left: 22px;
+  }
+  
+  .imageLabelRightBottom {
+    display: inline-block;
+    padding-left: 3%;
+  }
+  
+  .imageDiv {
+    position: relative;
+    display: inline-block;
+    width: calc(30rem - 50) !important;
+  }
+  
+  .aboutMeImage{
+    cursor: pointer;
+  }
+
+  .aboutMeImage:hover{
+    scale: 1.10;
+  }
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    .imageDiv {
+      width: 7.2rem;
+      height: 117.5px;
+    }
+  }
