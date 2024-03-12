@@ -90,16 +90,12 @@
   margin-top: 0.5%;
 }
 
-.navbar select,
-.navbar option {
+.navbar select {
   height: 3.25rem;
-  width: 7.5rem;
+  width: 10rem;
   font-size: 1rem;
   border-width: 2px;
-  border-radius: 10%;
-  padding: 10%;
-  margin-top: 3%;
-  background-color: white;
+  margin-left: 0.5rem;
 }
 
 /* Global Footer Styling */
