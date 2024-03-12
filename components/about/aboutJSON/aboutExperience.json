@@ -1,12 +1,32 @@
 [
     {
-        "modalSubtitle":"Classroom Teacher - Papatoetoe Intermediate",
-        "modalDate": "December 2020 to December 2022",
-        "modalContent": [ "Utilizing Selenium and Python Technologies to automate and manage repetitive administrative responsibilities", "Lead planning of team-wide Digital Technology curriculum", "Supporting colleagues and students, with technical queries and problems"]
+        "modalSubtitle": "Full-Stack Software Developer - Canary Data Solutions",
+        "modalDate": "June 2023 - Present",
+        "modalContent": [
+            "Designed, implemented and tested full-stack web solutions that exceeded stakeholder expectations.",
+            "Regularly installed, migrated and managed SQL server production databases for customers.",
+            "Efficently identified issues within web and desktop applications. Then implemented, tested and deployed effective solutions.",
+            "Professional and effective communication with stakeholders regarding project requirements, feedback, progress and answering technical questions and queries."
+        ]
     },
     {
-        "modalSubtitle":"Front-End Developer - Self-Employed Consultant",
-        "modalDate": "November 2022 to Now",
-        "modalContent": [ "Creating front-end UI with NextJS, Bootstrap, HTML5 and TailwindCSS", "Create Severs/API REST endpoints with Javascript", "Utilize S3 Bucket and EC2 for asset management and deployment", "Meetings and communication with customers to discuss project requirements and progress"]
+        "modalSubtitle": "Freelance Front-End Developer - Self-Employed",
+        "modalDate": "October 2022 - June 2023",
+        "modalContent": [
+            "Delivered solutions using Tailwind, HTML5, and JS increasing brand-awareness and SEO performance for individuals and small businesses.",
+            "Ensured solutions meet customer requirements through regular meetings and communication.",
+            "Effective project management using Jira, Git, and Slack.",
+            "Deployed projects using Azure and AWS."
+        ]
+    },
+    {
+        "modalSubtitle": "Classroom Teacher - Papatoetoe Intermediate",
+        "modalDate": "December 2020 - December 2022",
+        "modalContent": [
+            "Successfully promoted Cybersecurity awareness and safe online practices for teenagers.",
+            "Managed training and support for effective use of educational software, such as Google Learning for administrative and learning-based solutions.",
+            "Supported colleagues and students with technical queries and problems.",
+            "Collaborated with colleagues to plan and implement classroom curriculum."
+        ]
     }
 ]

@@ -1,27 +1,32 @@
 [
     {
-        "modalTitle": "Outdoors Sports",
-        "modalPicture": "me/hobbies/1.jpeg",
-        "modalContent": "Active, Always seeking adventure hiking, snorkelling, rock climbing and kayaking"
+        "modalTitle": "Languages",
+        "modalImage": "me/hobbies/1.jpeg",
+        "modalContent": "Fluent Mandarin speaker, enjoys singing karaoke (terribly), reading novels and drinking bubble tea."
     },
     {
-        "modalTitle": "Languages",
-        "modalPicture": "me/hobbies/2.jpeg",
-        "modalContent": "Fluent Mandarin Speaker, enjoys singing terrible karaoke, reading books and ordering bubble tea (in Mandarin). "
+        "modalTitle": "Strategy & Board Games",
+        "modalImage": "me/hobbies/2.jpeg",
+        "modalContent": "Regularly plays strategy and card games such as Cantan, Chess and Exploding Kittens."
+    },
+    {
+        "modalTitle": "AI and Technology Trends",
+        "modalImage": "me/hobbies/3.jpeg",
+        "modalContent": "Keen interest in the latest trends and news with AI/LLMs, Cybersecurity and Software Engineering."
+    },
+    {
+        "modalTitle": "Outdoors Sports",
+        "modalImage": "me/hobbies/4.jpeg",
+        "modalContent": "Active, always seeking adventures such as hiking, snorkelling, rock climbing and kayaking."
+    },
+    {
+        "modalTitle": "Travel and Culture",
+        "modalImage": "me/hobbies/5.jpeg",
+        "modalContent": "Travelled extensively around New Zealand, previously taught English in Taiwan and Japan."
     },
     {
         "modalTitle": "Sports",
-        "modalPicture": "me/hobbies/3.JPG",
-        "modalContent": "Lifetime Warriors Fan, occassionally watching cricket, rugby and basketball."
-    },
-    {
-        "modalTitle": "Games and Board Games",
-        "modalPicture": "me/hobbies/4.jpg",
-        "modalContent": "Uber competitive playing board games such as Cantan, Chess, Small World and Card Games"
-    },  
-    {   
-        "modalTitle": "Travel and Culture",
-        "modalPicture": "me/hobbies/5.jpeg",
-        "modalContent": "Travelled extensively all over Asia, lived in Taiwan and Japan for 4 years."
+        "modalImage": "me/hobbies/6.png",
+        "modalContent": "Warriors season ticket holder, currently learning Tennis."
     }
 ]

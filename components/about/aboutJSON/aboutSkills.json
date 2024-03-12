@@ -1,32 +1,44 @@
 [
     {
         "modalTitle": "Communication",
-        "modalPicture": "/me/skills/1.jpg",
-        "modalContent": ["Confident communicator, able to clearly articulate ideas and information with colleagues and clients during meetings, projects and discussions."]
+        "modalImage": "me/skills/1.jpeg",
+        "modalContent": [
+            "Confident communicator, able to clearly articulate ideas and information with colleagues and clients during meetings, projects and discussions."
+        ]
     },
     {
-        "modalTitle": "Front-End Development",
-        "modalPicture": "/me/skills/2.jpg",
-        "modalContent": ["Adapt at designing and building eye-catching, user- friendly UI with ReactJs, Bootstrap, Tailwind, NextJS, Adobe Photoshop and React Native."]
+        "modalTitle": "Full-Stack Development",
+        "modalImage": "me/skills/2.png",
+        "modalContent": [
+            "Planning, designing, and developing full-stack enterprise web applications with Vue, .Net, and T-SQL that exceed stakeholder expectations."
+        ]
     },
     {
-        "modalTitle": "Cyber Security",
-        "modalPicture": "/me/skills/3.jpg",
-        "modalContent": ["Practical Cybersecurity skills and knowledge of fundamentals including encryption, Cybersecurity layering, vulnerability management, CIA, authentication, and authorization."]
+        "modalTitle": "Database Management",
+        "modalImage": "me/skills/3.png",
+        "modalContent": [
+            "Adapt installing, migrating and managing new and existing development and production SQL databases."
+        ]
+    },
+    {
+        "modalTitle": "Collaboration",
+        "modalImage": "me/skills/4.png",
+        "modalContent": [
+            "Effective collaboration with developers and stakeholders using Clickup, Git and Microsoft 365."
+        ]
     },
     {
         "modalTitle": "Problem Solving",
-        "modalPicture": "/me/skills/4.jpg",
-        "modalContent": ["Creative thinker, able to apply logic and ideas to solve real world problems. I excel and enjoy activities such as video games, board games (chess) and Codwars."]
+        "modalImage": "me/skills/5.png",
+        "modalContent": [
+            "Proficient in identifying, analyzing, and resolving complex technical issues to optimize software functionality and enhance user experience."
+        ]
     },
     {
-        "modalTitle": "Project Management",
-        "modalPicture": "/me/skills/5.jpg",
-        "modalContent": ["Able to effectively prioritse and manage time to meet deadlines"]
-    },
-    {
-        "modalTitle": "Computer Networking",
-        "modalPicture": "/me/skills/6.jpg",
-        "modalContent": ["Excellent knowledge of core networking concepts, network management and troubleshooting."]
+        "modalTitle": "AI and Automation",
+        "modalImage": "me/skills/6.jpeg",
+        "modalContent": [
+            "Leveraging LLMs (Phind, ChatGPT) to enhance productivity and performance through enhancing analysis of ideas and solutions, creating automated tests and code generation."
+        ]
     }
 ]
