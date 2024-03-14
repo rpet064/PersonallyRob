@@ -1,0 +1,55 @@
+/* portfolio styling */
+.maincontainer, .portfolio{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+.portfolio .carouselContainer {
+    width: 60%;
+    margin: auto;
+    height: calc(19rem + 7.5vw - 90px);
+    padding: 2%;
+    cursor: pointer;
+  }
+  
+  .professionalProjectsContainer{
+    margin: auto;
+    width: 95%;
+  }
+  
+  .professionalProjectsContainerItems{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+  }
+
+  .mediumHeaderPortfolio {
+    font-size: 2rem;
+    margin: 0.1% 1.5% 1.5% 1.5%;
+    cursor: pointer;
+  }
+
+  .carouselMediumHeaderPortfolio{
+    padding-top: 5%;
+  }
+
+/* responsive */
+  @media (max-width: 1024px) {
+    .professionalProjectsContainerItems {
+        flex-direction: column;
+        }
+  }
+
+    @media (max-width: 1024px) {
+    .professionalProjectsContainerItems .imageDescriptionContainer, 
+    .professionalProjectsContainerItems .imageContainer {
+        padding-top: 5%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .professionalProjectsContainerItems .imageContainer {
+        order: -1
+    }
+  }

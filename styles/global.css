@@ -42,8 +42,7 @@ svg:hover,
 .logo:hover,
 button:hover,
 select:hover,
-#about-link:hover,
-.chinese-now:hover {
+#about-link:hover {
   color: #a2d9fd;
   cursor: pointer;
 }
@@ -56,13 +55,6 @@ option:not(:checked) {
 
 .modal-dialog {
   width: 200rem!important;
-}
-
-@media screen and (max-width: 900px) {
-  .modal-dialog {
-    position: relative;
-    top: 40rem;
-  } 
 }
 
 .carousel-indicators {
@@ -84,4 +76,20 @@ option:not(:checked) {
 
 .carousel-control-next {
   margin-left: 15%;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  #about-header,
+  #portfolio-header {
+    font-size: 2.5rem;
+    padding: 1.5% 2%;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .modal-dialog {
+    position: relative;
+    top: 40rem;
+  } 
 }
