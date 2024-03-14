@@ -63,8 +63,8 @@ const Me = () => {
   return (
     <div id="about" className={aboutStyles.maincontainer}>
       <Navbar />
-      <h1 className={styles.largeheader}>Robert Pether</h1>
-      <h1 id="about-header" className={styles.mediumheader}>Background</h1>
+      <h1 className={styles.largeHeader}>Robert Pether</h1>
+      <h1 id="about-header" className={styles.mediumHeader}>Background</h1>
 
       {/* Top Image Labels */}
       <div className={aboutStyles.imageLabelContainerTop}>
@@ -73,7 +73,7 @@ const Me = () => {
       </div>
 
       {/* Images - Row 1 */}
-      <div className={styles.imagecontainer}>
+      <div className={styles.imageContainer}>
         <div className={styles.row1}>
           <Image
             className={aboutStyles.aboutMeImage}
@@ -141,7 +141,7 @@ const Me = () => {
         </Modal>
       </div>
 
-      <div className={styles.mebtncontainer}>
+      <div className={styles.meBtnContainer}>
         <button className={styles.portfoliobtn} title="Portfolio">
           <Link id="about-link" href="/about/portfolio">Portfolio</Link>
         </button>

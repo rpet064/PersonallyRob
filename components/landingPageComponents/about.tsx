@@ -1,17 +1,14 @@
 import Image from "next/image";
 import styles from '../../styles/Home.module.css';
-
-const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`;
-};
+import { imageLoader } from "../../utility/imageLoader";
 
 export default function About() {
     return (
       <div className={styles.homepage}>
-        <h1 className={styles.largeheader}>Robert Pether</h1>
-         <div className={styles.imagecontainer}>
+        <h1 className={styles.largeHeader}>Robert Pether</h1>
+         <div className={styles.imageContainer}>
           <Image
-              loader={myLoader}
+              loader={imageLoader}
               src="robert_pether.png"
               alt="Picture of the author"
               width={175}

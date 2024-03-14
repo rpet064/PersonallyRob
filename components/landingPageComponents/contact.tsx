@@ -11,15 +11,11 @@ import {
   library.add(faYoutube, faGithub,faLinkedin, faEnvelope);
 config.autoAddCss = false;
 
-const myLoader = ({ src }) => {
-  return `https://personallyrobphotobucket.s3.amazonaws.com/${src}`;
-};
-
 export default function Contact() {
     return (
     <div>
         <div>
-            <h1 title="About" className={styles.mediumheader}>Full-Stack React Developer</h1>
+            <h1 title="About" className={styles.mediumHeader}>Full-Stack React Developer</h1>
             <button title="About">
                 <Link id="about-link" href="/about/me#about">About</Link>
             </button>
